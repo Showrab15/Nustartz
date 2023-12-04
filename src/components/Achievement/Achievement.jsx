@@ -8,7 +8,7 @@ const Achievement = () => {
     scrollSpyDelay: 1000,
   });
   return (
-    <div className="px-4 md:px-12 relative bottom-[600px] ">
+    <div className="px-4 md:px-12 mt-14 ">
       <h1 className="text-[#050038] text-center font-bold text-5xl leading-10 tracking-wider font-sans mb-[45px]">
         Achivemenst of new startz
       </h1>
@@ -53,7 +53,7 @@ const Achievement = () => {
           </p>
         </div>
         <div className="w-full md:w-[360px] text-center">
-		<CountUp start={0} end={99} delay={0} enableScrollSpy>
+          <CountUp start={0} end={99} delay={0} enableScrollSpy>
             {({ countUpRef }) => (
               <div className="flex font-bold text-6xl text-[#050038] text-center font-inter mb-9 justify-center">
                 <h1
@@ -70,7 +70,7 @@ const Achievement = () => {
           </p>
         </div>
         <div className="w-full md:w-[360px] text-center">
-		<CountUp start={0} end={1000} delay={0} enableScrollSpy>
+          <CountUp start={0} end={1000} delay={0} enableScrollSpy>
             {({ countUpRef }) => (
               <div className="flex font-bold text-6xl text-[#050038] text-center font-inter mb-9 justify-center">
                 <h1
@@ -87,7 +87,7 @@ const Achievement = () => {
           </p>
         </div>
         <div className="w-full md:w-[360px] text-center">
-		<CountUp start={0} end={45} delay={0} enableScrollSpy>
+          <CountUp start={0} end={45} delay={0} enableScrollSpy>
             {({ countUpRef }) => (
               <div className="flex font-bold text-6xl text-[#050038] text-center font-inter mb-9 justify-center">
                 <h1
