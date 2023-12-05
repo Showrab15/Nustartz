@@ -13,7 +13,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 const Testimonial = () => {
   return (
     <div className="pt-8 pb-10 bgColor">
-      <h3 className="text-[#050038] text-5xl font-bold font-Poppins text-right leading-[56px] px-4 md:px-12 mb-14">
+      <h3 className="text-[#050038] text-5xl font-bold font-serif text-right leading-[56px] px-4 md:px-12 mb-14">
         TESTIMONIAL <br /> WALL
       </h3>
       <Swiper
@@ -40,7 +40,7 @@ const Testimonial = () => {
                 className="w-[170px] h-[170px] mx-auto"
                 alt=""
               />
-              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4">
+              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4 font-Playfair">
                 Greg Stuart
               </h5>
               <div className="flex justify-center gap-2">
@@ -50,7 +50,7 @@ const Testimonial = () => {
                 <img src={star} alt="" />
                 <img src={star} alt="" />
               </div>
-              <p className="text-center mt-4">
+              <p className="text-center mt-4 font-Montserrat">
                 “Vestibulum, cum nam non amet consectetur morbi aenean
                 condimentum eget. Ultricies integer nunc neque accumsan laoreet.
                 Viverra nibh ultrices.”
@@ -64,7 +64,7 @@ const Testimonial = () => {
                 className="w-[170px] h-[170px] mx-auto"
                 alt=""
               />
-              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4">
+              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4 font-Playfair">
                 Greg Stuart
               </h5>
               <div className="flex justify-center gap-2">
@@ -74,7 +74,7 @@ const Testimonial = () => {
                 <img src={star} alt="" />
                 <img src={star} alt="" />
               </div>
-              <p className="text-center mt-4">
+              <p className="text-center mt-4 font-Montserrat">
                 “Vestibulum, cum nam non amet consectetur morbi aenean
                 condimentum eget. Ultricies integer nunc neque accumsan laoreet.
                 Viverra nibh ultrices.”
@@ -88,7 +88,7 @@ const Testimonial = () => {
                 className="w-[170px] h-[170px] mx-auto"
                 alt=""
               />
-              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4">
+              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4 font-Playfair">
                 Greg Stuart
               </h5>
               <div className="flex justify-center gap-2">
@@ -98,7 +98,7 @@ const Testimonial = () => {
                 <img src={star} alt="" />
                 <img src={star} alt="" />
               </div>
-              <p className="text-center mt-4">
+              <p className="text-center mt-4 font-Montserrat">
                 “Vestibulum, cum nam non amet consectetur morbi aenean
                 condimentum eget. Ultricies integer nunc neque accumsan laoreet.
                 Viverra nibh ultrices.”
@@ -112,7 +112,7 @@ const Testimonial = () => {
                 className="w-[170px] h-[170px] mx-auto"
                 alt=""
               />
-              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4">
+              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4 font-Playfair">
                 Greg Stuart
               </h5>
               <div className="flex justify-center gap-2">
@@ -122,7 +122,7 @@ const Testimonial = () => {
                 <img src={star} alt="" />
                 <img src={star} alt="" />
               </div>
-              <p className="text-center mt-4">
+              <p className="text-center mt-4 font-Montserrat">
                 “Vestibulum, cum nam non amet consectetur morbi aenean
                 condimentum eget. Ultricies integer nunc neque accumsan laoreet.
                 Viverra nibh ultrices.”
@@ -136,7 +136,7 @@ const Testimonial = () => {
                 className="w-[170px] h-[170px] mx-auto"
                 alt=""
               />
-              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4">
+              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4 font-Playfair">
                 Greg Stuart
               </h5>
               <div className="flex justify-center gap-2">
@@ -146,7 +146,7 @@ const Testimonial = () => {
                 <img src={star} alt="" />
                 <img src={star} alt="" />
               </div>
-              <p className="text-center mt-4">
+              <p className="text-center mt-4 font-Montserrat">
                 “Vestibulum, cum nam non amet consectetur morbi aenean
                 condimentum eget. Ultricies integer nunc neque accumsan laoreet.
                 Viverra nibh ultrices.”
@@ -160,7 +160,7 @@ const Testimonial = () => {
                 className="w-[170px] h-[170px] mx-auto"
                 alt=""
               />
-              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4">
+              <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4 font-Playfair">
                 Greg Stuart
               </h5>
               <div className="flex justify-center gap-2">
@@ -170,7 +170,7 @@ const Testimonial = () => {
                 <img src={star} alt="" />
                 <img src={star} alt="" />
               </div>
-              <p className="text-center mt-4">
+              <p className="text-center mt-4 font-Montserrat">
                 “Vestibulum, cum nam non amet consectetur morbi aenean
                 condimentum eget. Ultricies integer nunc neque accumsan laoreet.
                 Viverra nibh ultrices.”

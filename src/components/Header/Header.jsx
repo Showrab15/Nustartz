@@ -1,76 +1,41 @@
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import person from '../../assets/bannerPic1.png'
-import './header.css'
+import person from "../../assets/bannerPic1.png";
+import "./header.css";
 const Header = () => {
+  const carouselSettings = {
+    showArrows: false,
+    showStatus: false,
+    infiniteLoop: true,
+    autoPlay: true,
+    interval: 3000,
+    showThumbs: false,
+  };
 
-    const carouselSettings = {
-        showArrows: false,
-        showStatus: false,
-        infiniteLoop: true,
-        autoPlay: true,
-        interval: 3000,
-        showThumbs: false,
-    };
+  return (
+    <div className="relative bottom-[400px] 2xl:bottom-[0px]">
+      <Carousel {...carouselSettings}>
+        <div className="flex flex-col md:flex-row  items-center">
+          <div className="order-2 md:order-1 px-1 md:px-0">
+            <h2 className="text-[#000000] lg:ml-[80px] lg:w-[580px] text-3xl md:text-[40px] font-bold text-left font-serif mt-8 mb-4">
+              We help you to
+            </h2>
+            <p className="text-[#000] lg:ml-[80px] lg:w-[580px]  text-xl md:text-[30px] font-medium leading-9 md:leading-[48px] font-serif text-left">
+              Elevate your teams capabilities <br /> with our proficient
+              software <br /> engineers.
+            </p>
 
+            <button className="bg-[#275998] relative  py-5 px-10 lg:mr-[360px] rounded-[60px] text-white font-semibold mt-12 ">
+              Schedule
+            </button>
+          </div>
+          <div className="order-1 md:order-2">
+            <img className="xl:overflow-x-hidden xl-mr-4 " src={person} alt="" />
+          </div>
+        </div>
+      </Carousel>
 
-
-    return (
-        <div className="relative bottom-[400px]">
-
-
-
-
-
-            <Carousel {...carouselSettings}>
-
-
-
-
-
-                <div className='md:flex justify-evenly items-center'>
-                    <div>
-                        <h2 className="text-[#000000] lg:ml-[80px] lg:w-[580px] text-[40px] font-bold text-left font-serif">We help you to
-                            <p className="text-[30px] font-semibold leading-[50px]">Elevate your teams capabilities <br /> with our proficient software <br /> engineers.</p>
-                        </h2>
-
-
-
-                        <div className='bg-cover bg-center w-full  h-full'>
-                            <button className="bg-[#275998] relative  py-4 px-8 lg:mr-[360px] rounded-3xl text-white font-semibold mt-12 ">Schedule</button>
-                        </div>
-
-                    </div>
-
-                    <div>
-                        <img src={person} alt="" />
-                    </div>
-
-                </div>
-
-            </Carousel>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* <Carousel {...carouselSettings}>
+      {/* <Carousel {...carouselSettings}>
                <div>
 
 
@@ -96,12 +61,11 @@ const Header = () => {
 
 // {/* <img className="relative bottom-[20px]" src={bannerBottom} alt="" /> */}
 
-            {/* </div> */}
+      {/* </div> */}
 
-            {/* // </Carousel>  */}
-
-        </div>
-    );
+      {/* // </Carousel>  */}
+    </div>
+  );
 };
 
 export default Header;

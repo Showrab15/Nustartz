@@ -14,7 +14,7 @@ const router = createBrowserRouter([
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
- <div className=" max-w-screen-2xl mx-auto">
+ <div className=" max-w-screen-2xl mx-auto overflow-x-hidden">
  <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,

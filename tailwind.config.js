@@ -15,12 +15,16 @@ export default {
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      "2xl": "1536px",
+      "2xl": "1484px",
       // => @media (min-width: 1536px) { ... }
+
+     
     },
     fontFamily: {
       'sans': ['"Inter", sans-serif'],
       'serif': ['"Poppins", sans-serif'],
+      'Playfair': ['"Playfair Display", sans-serif'],
+      'Montserrat': ['"Montserrat", sans-serif']
     },
     extend: {},
   },
