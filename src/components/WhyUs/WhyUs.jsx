@@ -61,12 +61,12 @@ const WhyUs = () => {
   return (
     <div className="flex-col flex text-white  bgColor  ">
       <div className="flex mx-auto justify-center pt-28 px-4 relative">
-        <h3 className="text-[#275998] font-bold font-serif text-[98px] leading-[100px] -ml-28 lg:ml-0">
-          Why <br /> <span className="ml-16 ">Us</span>
+        <h3 className="text-[#275998] text-center font-bold font-serif  text-[60px] md:text-[98px] md:leading-[100px] -ml-[57px] lg:ml-0">
+          Why <br /> <span className=" ml-14 md:ml-16 relative md:bottom-0 bottom-5">Us</span>
         </h3>
         <img
           src={q}
-          className="absolute left-24 lg:left-[180px] top-[78px] md:top-20 lg:top-8"
+          className="absolute left-[66px] md:left-28 lg:left-[180px] top-[88px] md:top-20 lg:top-8"
           alt=""
         />
       </div>

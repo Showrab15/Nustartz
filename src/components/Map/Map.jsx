@@ -2,14 +2,14 @@ import map from '../../assets/map1.png'
 import './map.css' 
 const Map = () => {
     return (
-        <div className="mt-20 md:mb-0 mb-[1300px]">
+        <div className="mt-20 md:mb-0 mb-[1650px]">
 <h1 className="text-center lg:text-left md:pl-8  text-[30px] md:text-[48px] font-semibold font-serif leading-[55px] text-[#050038] py-8">GLOBAL FOOT PRINT</h1>
-<div className="worldbg md:h-[600px] md:w-[700px] lg:h-[750px] lg:w-[1000px] h-[400px] w-[400px] mx-auto">
-<img className="relative md:top-[110px] lg:top-[80px]" src={map} alt="" />
+<div className="worldbg md:h-[600px] md:w-[700px] lg:h-[750px] lg:w-[1000px] h-[300px] w-[300px] mx-auto">
+<img className="relative md:top-[110px] lg:top-[80px] top-[70px]" src={map} alt="" />
 
 
 {/* first column locations */}
-<div className="relative md:ml-0 ml-[45px] md:right-28 md:bottom-[450px] lg:bottom-[600px] bottom-[300px] mx-auto">
+<div className="relative md:ml-0 md:right-28 md:bottom-[450px] lg:bottom-[600px] mt-20 md:mt-0 mx-auto">
 
  <div className="my-3 mx-auto grid md:ml-[80px] ml-0 md:grid-cols-2  lg:grid-cols-3 lg:gap-60 md:gap-[200px] gap-4 text-white">
             <div className="w-[310px] h-[180px] rounded-2xl text-base  " style={{ backgroundColor: 'rgba(39, 89, 152, 1)'}}>
@@ -52,9 +52,9 @@ const Map = () => {
 
 {/* second column locations */}
 
- <div className="relative bottom-72  md:ml-0 ml-[45px] md:right-[35px] lg:bottom-[500px] md:bottom-[830px] mx-auto">
+ <div className="relative   md:ml-0  md:right-[35px] lg:bottom-[500px] md:bottom-[830px] mx-auto">
 
- <div className="my-3 mx-auto grid  md:grid-cols-2  lg:grid-cols-3 lg:gap-32 md:gap-[280px] gap-8 text-white">
+ <div className="my-3 mx-auto grid  md:grid-cols-2  lg:grid-cols-3 lg:gap-32 md:gap-[280px] gap-4 text-white">
             <div className="w-[310px] h-[180px] rounded-2xl text-base  " style={{ backgroundColor: 'rgba(39, 89, 152, 1)'}}>
                 <p className="my-auto flex items-center space-y-2  px-4 py-4 font-serif ">Corporate Headquarters, <br/> Numentica LLC  3868 W Carson St, <br/>   Suite 300 Torrance, CA 90503, USA <br />
                     contact@numentica.com <br /></p>
@@ -98,9 +98,9 @@ const Map = () => {
 
 {/* third column locations */}
 
-<div className="relative md:bottom-[500px]  lg:bottom-[500px] bottom-64 ml-[45px] md:ml-0 lg:ml-0 lg:left-[400px] ">
+<div className="relative md:bottom-[500px]  lg:bottom-[500px]   md:ml-0 lg:ml-0 lg:left-[400px] ">
 
- <div className="my-3 mx-auto grid  md:grid-cols-2  lg:grid-cols-3 lg:gap-32 gap-8 md:gap-[400px] text-white">
+ <div className="my-3 mx-auto grid  md:grid-cols-2  lg:grid-cols-3 lg:gap-32 gap-4 md:gap-[400px] text-white">
             <div className="relative lg:right-[120px] lg:top-[40px] w-[310px] h-[180px] rounded-2xl text-base  " style={{ backgroundColor: 'rgba(39, 89, 152, 1)'}}>
                 <p className="my-auto flex items-center space-y-2  px-4 py-4 font-serif ">Corporate Headquarters, <br/> Numentica LLC  3868 W Carson St, <br/>   Suite 300 Torrance, CA 90503, USA <br />
                     contact@numentica.com <br /></p>

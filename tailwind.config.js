@@ -22,7 +22,7 @@ export default {
     },
     fontFamily: {
       'sans': ['"Inter", sans-serif'],
-      'serif': ['"Poppins", sans-serif'],
+      serif: ["Poppins", "sans-serif"],
       'Playfair': ['"Playfair Display", sans-serif'],
       'Montserrat': ['"Montserrat", sans-serif']
     },
