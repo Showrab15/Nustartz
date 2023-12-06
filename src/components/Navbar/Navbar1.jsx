@@ -10,22 +10,26 @@ const Navbar1 = () => {
     <div className="my-container">
       <div className="flex items-center justify-center">
         <div>
-          <img className="relative 2xl:hidden  xl:right-[266px] right-[205px]" src={Coderwall} alt="" />
+          <img
+            className="relative 2xl:hidden  xl:right-[266px] right-[205px]"
+            src={Coderwall}
+            alt=""
+          />
         </div>
-        <div className="relative bottom-[200px] 2xl:bottom-[0px]  flex items-center justify-between">
+        <div className="relative bottom-[200px] md:bottom-[190px] 2xl:bottom-[0px] flex items-center justify-between my-auto">
           <Link
             to="/"
             aria-label="Nustratz"
             //   title="HeroHub"
-            className="inline-flex items-center -mt-32 md:mt-0"
+            className="inline-flex items-center -mt-32 lg:mt-0"
           >
-              <img
-                alt="logo"
-                src={logo}
-                className="md:w-[280] relative right-[190px] md:right-[400px] md:h-[75]"
-              />
+            <img
+              alt="logo"
+              src={logo}
+              className=" relative lg:w-[280px] right-[190px] md:right-[350px] lg:right-[400px] md:h-[75px]"
+            />
           </Link>
-          <div className="relative right-[200px] 2xl:bottom-[0px] hidden md:block">
+          <div className="relative right-[200px] 2xl:bottom-[0px] hidden lg:block">
             <ul className="items-center text-base text-[#294A85] font-medium space-x-8 lg:flex">
               <li>
                 <NavLink
@@ -58,18 +62,18 @@ const Navbar1 = () => {
               </li>
             </ul>
           </div>
-          <div className="relative left-[100px] hidden md:block">
+          <div className="relative left-[100px] hidden lg:block">
             <button className="bg-[#275998] border-none px-6 py-4 rounded-md lg:block text-white text-sm font-bold font-Montserrat">
               Contact →{" "}
             </button>
           </div>
 
           {/* //------------------------- for mobile----------------------------------- */}
-          <div className="flex justify-between px-4 md:hidden -mr-3">
+          <div className="flex justify-between px-4 lg:hidden -mr-3">
             <button
               aria-label="Open Menu"
               title="Open Menu"
-              className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 -mt-32"
+              className="-mr-1 md:-mr-60 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 -mt-32"
               onClick={() => setIsMenuOpen(true)}
             >
               <svg className="w-5 text-gray-600" viewBox="0 0 24 24">

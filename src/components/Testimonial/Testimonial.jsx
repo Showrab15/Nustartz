@@ -12,9 +12,9 @@ import { FreeMode, Pagination } from 'swiper/modules';
 
 const Testimonial = () => {
   return (
-    <div className="pt-8 pb-10 bgColor">
-      <h3 className="text-[#050038] text-5xl font-bold font-serif text-right leading-[56px] px-4 md:px-12 mb-14">
-        TESTIMONIAL <br /> WALL
+    <div className="pt-8 mt-60 pb-10 bgColor">
+      <h3 className="text-[#050038] md:text-5xl text-3xl text-center  font-bold font-serif md:text-right leading-[56px] px-4 md:px-12 mb-14">
+        TESTIMONIAL <br className="hidden md:block" /> WALL
       </h3>
       <Swiper
         spaceBetween={30}

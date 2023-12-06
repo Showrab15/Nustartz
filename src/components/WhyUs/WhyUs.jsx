@@ -61,17 +61,17 @@ const WhyUs = () => {
   return (
     <div className="flex-col flex text-white  bgColor  ">
       <div className="flex mx-auto justify-center pt-28 px-4 relative">
-        <h3 className="text-[#275998] font-bold font-serif text-[98px] leading-[100px] -ml-28 md:ml-0">
+        <h3 className="text-[#275998] font-bold font-serif text-[98px] leading-[100px] -ml-28 lg:ml-0">
           Why <br /> <span className="ml-16 ">Us</span>
         </h3>
         <img
           src={q}
-          className="absolute left-24 md:left-[180px] top-16 md:top-8"
+          className="absolute left-24 lg:left-[180px] top-[78px] md:top-20 lg:top-8"
           alt=""
         />
       </div>
-      <div className=" mx-auto mt-8 md:mt-4">
-        <div className="mx-auto grid md:grid-cols-3 md:gap-32 gap-10 text-center  items-center">
+      <div className=" mx-auto mt-8 md:mt-11 lg:mt-4">
+        <div className="mx-auto grid lg:grid-cols-3 gap-10 lg:gap-32 text-center items-center">
           <div>
             <div className="bg-[#3595FC] w-[290px] p-5 rounded-[35px] cursor-pointer hover:animate-pulse">
               <img

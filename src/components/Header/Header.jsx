@@ -15,12 +15,12 @@ const Header = () => {
   return (
     <div className="relative bottom-[400px] 2xl:bottom-[0px]">
       <Carousel {...carouselSettings}>
-        <div className="flex flex-col md:flex-row  items-center">
-          <div className="order-2 md:order-1 px-1 md:px-0">
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="order-2 lg:order-1 px-1 lg:px-0">
             <h2 className="text-[#000000] lg:ml-[80px] lg:w-[580px] text-3xl md:text-[40px] font-bold text-left font-serif mt-8 mb-4">
               We help you to
             </h2>
-            <p className="text-[#000] lg:ml-[80px] lg:w-[580px]  text-xl md:text-[30px] font-medium leading-9 md:leading-[48px] font-serif text-left">
+            <p className="text-[#000] lg:ml-[80px] lg:w-[580px] text-xl md:text-[30px] font-medium leading-9 lg:leading-[48px] font-serif text-left">
               Elevate your teams capabilities <br /> with our proficient
               software <br /> engineers.
             </p>
@@ -29,8 +29,8 @@ const Header = () => {
               Schedule
             </button>
           </div>
-          <div className="order-1 md:order-2">
-            <img className="xl:overflow-x-hidden xl-mr-4 " src={person} alt="" />
+          <div className="order-1 lg:order-2">
+            <img className="w-full lg:h-full xl:overflow-x-hidden xl-mr-4" src={person} alt="" />
           </div>
         </div>
       </Carousel>

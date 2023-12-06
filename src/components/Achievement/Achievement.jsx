@@ -8,14 +8,14 @@ const Achievement = () => {
     scrollSpyDelay: 1000,
   });
   return (
-    <div className="px-4 md:px-12 mt-14 ">
+    <div className="px-4 md:px-8 lg:px-12 mt-14 ">
       <h1 className="text-[#050038] text-center font-bold text-5xl leading-10 tracking-wider font-sans mb-[45px]">
         Achivemenst of new startz
       </h1>
       <p className="text-[#050038] text-center text-lg font-sans leading-6 mb-10 underline">
         Contact Sales to request a demo
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <div className="w-full md:w-[360px] text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
