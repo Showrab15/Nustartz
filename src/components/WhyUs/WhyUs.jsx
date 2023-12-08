@@ -59,14 +59,14 @@ import q from "../../assets/q.png";
 
 const WhyUs = () => {
   return (
-    <div className="flex-col flex text-white  bgColor  ">
+    <div className="flex-col flex text-white   h-full">
       <div className="flex mx-auto justify-center pt-28 px-4 relative">
         <h3 className="text-[#275998] text-center font-bold font-serif  text-[60px] md:text-[98px] md:leading-[100px] -ml-[57px] lg:ml-0">
           Why <br /> <span className=" ml-14 md:ml-16 relative md:bottom-0 bottom-5">Us</span>
         </h3>
         <img
           src={q}
-          className="absolute left-[66px] md:left-28 lg:left-[180px] top-[88px] md:top-20 lg:top-8"
+          className="absolute left-[66px] md:left-[130px] lg:left-[180px] top-[79px] md:top-[35px] lg:top-8"
           alt=""
         />
       </div>
@@ -90,38 +90,38 @@ const WhyUs = () => {
             </h4>
           </div>
           <div>
-            <div className=" p-5 bg-[#03254D] mt-8 w-[290px] rounded-[35px] cursor-pointer hover:animate-pulse">
+            <div className=" p-5 bg-[#03254D] mt-11 w-[290px] rounded-[35px] cursor-pointer hover:animate-pulse">
               <img
                 className="w-[99px] h-[102px] flex mx-auto"
                 src={light}
                 alt=""
               />
-              <p className="mt-5 text-[16px] font-semibold font-serif">
+              <p className="mt-5  text-[16px] font-semibold font-serif">
                 We thrive on innovation,
                 <br /> delivering cutting-edge <br /> solutions that keep your
                 product <br /> ahead of the curve.
               </p>
             </div>
             <h4 className="mx-auto text-[32px] font-serif font-semibold text-[#275998]">
-              Innovation <br />
-              at Core
+              Innovation <br/>
+             <span className="relative bottom-4"> at Core</span>
             </h4>
           </div>
 
           <div>
-            <div className=" p-5 w-[290px] mt-6 rounded-[35px] cursor-pointer bg-[#6287B1] hover:animate-pulse">
+            <div className=" p-5 w-[290px] mt-8 rounded-[35px] cursor-pointer bg-[#6287B1] hover:animate-pulse">
               <img
-                className="w-[94px] h-[94px] flex mx-auto"
+                className="w-[94px] h-[94px] flex mx-auto justify-center mr-[70px]"
                 src={note}
                 alt=""
               />
-              <p className="py-7 text-[16px] font-semibold font-serif">
+              <p className="py-9 text-[16px] font-semibold font-serif">
                 Your success is our priority, <br /> and we measure it by your
                 achievements.
               </p>
             </div>
             <h4 className="mx-auto text-[32px] font-serif font-semibold text-[#275998]">
-              Results-Driven <br /> Approach
+              Results-Driven <br /> <span  className="relative bottom-4"> Approach</span>
             </h4>
           </div>
         </div>

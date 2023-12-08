@@ -1,17 +1,25 @@
 
 
+import { useLocation } from 'react-router-dom';
 import './Footer.css'
 import SocialFooterIcons from './SocialFooterIcons';
 const Footer = () => {
+
+    const location = useLocation();
+  const isAboutUsPage = location.pathname === '/about-Us';
+  
+  // Define the classes for the footer based on the route
+  const footerClasses = isAboutUsPage ? 'mt-20' : '-mt-6';
+  
     return (
-        <footer className=''>
-            <div className="bgColor  text-black font-serif">
-                <div className="container mx-auto pt-4 md:pt-32 px-3">
-                    <div className='grid md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-11'>
+        <footer className={footerClasses}>
+        <div className="bgColor  text-black font-serif">
+                <div className="container mx-auto pt-4 lg:pt-32 px-3">
+                    <div className='grid mx-auto ml-0 md:ml-[160px] md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-11'>
                         <div>
                             <img className="w-52 mb-5" src='https://i.ibb.co/1XYk81B/Steve-logo-copy-2-1.png' alt="" />
                             <p className='mb-1'>Website : www.nustartz.com</p>
-                            <p className='mb-1'>Email : Steve@nustartz.com</p>
+                            <p className='mb-1'>Email : contact@NuStartz.com</p>
                             <p className=''>Mobile : +1 732 983 1325</p>
 
                             {/* social icon */}
@@ -19,7 +27,7 @@ const Footer = () => {
                         </div>
 
                         {/* useful links */}
-                        <div>
+                        <div className="mt-4">
                             <h1 className="text-2xl font-bold mb-5">Our Links</h1>
                             <ul className=''>
                                 <li className='mb-2'>
@@ -41,7 +49,7 @@ const Footer = () => {
                         </div>
 
                         {/* company */}
-                        <div>
+                        <div className="mt-4">
                             <h1 className="text-2xl font-bold mb-5">Our Company</h1>
                             {/* <ul className=''>
                                 <li className='mb-2'>
@@ -62,7 +70,7 @@ const Footer = () => {
                         </div>
 
                         {/* support */}
-                        <div>
+                        <div className="mt-4">
                             <h1 className="text-2xl font-bold mb-5">Our Support</h1>
                             {/* <ul className=''>
                                 <li className='mb-2'>
