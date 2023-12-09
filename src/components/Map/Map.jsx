@@ -3,7 +3,7 @@ import wave from '../../assets/Hero Slider.png'
 import './map.css'
 const Map = () => {
     return (
-        <>
+        <div className="mt-20">
             <div className="mt-16 lg:mb-20 md:mb-52  mb-[1550px]  py-14">
                 <h1 className="text-center  md:pl-8  text-[30px] md:text-[48px] font-bold font-serif leading-[55px] text-[#050038] pb-10">GLOBAL FOOT PRINT</h1>
                 <div className="worldbg md:h-[600px] md:w-[700px] lg:h-[750px] lg:w-[1000px] h-[300px] w-[300px] mx-auto">
@@ -135,7 +135,7 @@ const Map = () => {
 
             </div>
             <img className="-mt-1" src={wave} alt="" />
-        </>
+        </div>
 
 
     );

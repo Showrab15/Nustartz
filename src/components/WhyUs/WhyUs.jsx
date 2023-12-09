@@ -56,10 +56,13 @@ import chart from "../../assets/hi.png";
 import light from "../../assets/light.png";
 import note from "../../assets/note.png";
 import q from "../../assets/q.png";
+import wave from '../../assets/Hero Slider.png'
 
 const WhyUs = () => {
   return (
-    <div className="flex-col flex text-white   h-full">
+
+    <>
+        <div className="flex-col flex text-white   h-full">
       <div className="flex mx-auto justify-center pt-28 px-4 relative">
         <h3 className="text-[#275998] text-center font-bold font-serif  text-[60px] md:text-[98px] md:leading-[100px] -ml-[57px] lg:ml-0">
           Why <br /> <span className=" ml-14 md:ml-16 relative md:bottom-0 bottom-5">Us</span>
@@ -127,6 +130,11 @@ const WhyUs = () => {
         </div>
       </div>
     </div>
+
+    
+    <img className="-mt-2 w-full" src={wave} alt="" />
+
+    </>
   );
 };
 

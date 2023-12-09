@@ -71,7 +71,7 @@ const Header = () => {
     <div>
       <Carousel {...carouselSettings}>
         {/* 1st Carousel */}
-        <div className="flex flex-col lg:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center">
           <div className="order-2 lg:order-1 px-1 lg:px-0 lg:ml-[60px]">
             <h2 className="text-[#000000] text-3xl md:text-[40px] font-bold text-left font-serif lg:w-[489px] mt-8 mb-4">
               We help you to
@@ -95,7 +95,7 @@ const Header = () => {
           </div>
         </div>
         {/* 2nd Carousel */}
-        <div className="flex flex-col lg:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center">
           <div className="order-2 lg:order-1 px-1 lg:px-0 mr-[45px] md:mr-0 lg:ml-[60px]">
             <h2 className="text-[#000000] text-3xl md:text-[40px] font-bold text-left font-serif lg:w-[489px] mt-8 mb-4">
               Eliminate
@@ -118,7 +118,7 @@ const Header = () => {
           </div>
         </div>
         {/* 3rd Carousel */}
-        <div className="flex flex-col lg:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center">
           <div className="order-2  mr-[45px] md:mr-0  lg:order-1 px-1 lg:px-0 lg:ml-[60px]">
             <h2 className="text-[#000000] text-3xl md:text-[40px] font-bold text-left font-serif lg:w-[489px] mt-8 mb-4">
               Retain

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import logo from "../../assets/Nustartz.png";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
@@ -16,16 +10,13 @@ const Navbar1 = () => {
   };
 
   return (
-    <div className="flex flex-row justify-between px-4 lg:px-12 py-5 relative">
-      <Link to='/'><img src={logo} className="w-28 h-10 lg:w-[201px] lg:h-[55px]" alt="" /></Link>
+    <div className="flex flex-row justify-between px-4 lg:px-12 py-5 relative w-full max-w-[1322px] mx-auto">
+      <Link to="/">
+        <img src={logo} className="w-28 h-10 lg:w-[201px] lg:h-[55px]" alt="" />
+      </Link>
       <ul className="font-serif hidden lg:flex items-center justify-center space-x-9 text-base text-[#294A85] font-medium  ">
         <li>
-          <NavLink
-            to="/"
-            aria-label="Home"
-            title="Home"
-            className=""
-          >
+          <NavLink to="/" aria-label="Home" title="Home" className="">
             Home
           </NavLink>
         </li>
@@ -40,19 +31,14 @@ const Navbar1 = () => {
           </NavLink>
         </li>
         <li>
-          <Link
-            to="about-Us"
-            aria-label="about"
-            title="about"
-            className=""
-          >
+          <Link to="about-Us" aria-label="about" title="about" className="">
             About
           </Link>
         </li>
       </ul>
       <button className="bg-[#275998] hidden border-none p-4 rounded-xl lg:block  text-white text-base">
-                         Contact →{" "}
-                       </button>
+        Contact →{" "}
+      </button>
 
       {/*----------------------- Mobile Menu -------------------------*/}
       <div className="lg:hidden">

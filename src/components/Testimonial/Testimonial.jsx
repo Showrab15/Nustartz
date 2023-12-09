@@ -5,7 +5,7 @@ import person3 from "../../assets/Testimonials Person/mynainsights_logo 1.png";
 import person4 from "../../assets/Testimonials Person/low-angle-handsome-smiley-man1.png";
 import person5 from "../../assets/Testimonials Person/portrait-good-looking-smiling-arabic-man-suit-attractive-young-businessman-with-beard-moustache-looking-camera-portrait-international-beauty-concept 1.png";
 import star from "../../assets/star.svg";
-import wave from '../../assets/Hero Slider.png'
+// import wave from '../../assets/Hero Slider.png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -156,7 +156,7 @@ our valued  clients   <br className="md:block hidden"/> through their testimonia
       </Swiper>
 
     </div>
-    <img className="-mt-2" src={wave} alt="" />
+    {/* <img className="-mt-5 w-full" src={wave} alt="" /> */}
     </>
 
   );

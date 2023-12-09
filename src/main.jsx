@@ -7,9 +7,8 @@ import {
 import App from './App';
 import "./index.css";
 import { Analytics } from '@vercel/analytics/react';
-import OurTeams from './components/OurTeams/OurTeams';
 import Home from './Pages/Home/Home';
-
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 
 const router = createBrowserRouter([
@@ -23,16 +22,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/about-Us',
-        element: <OurTeams/>
+        element: <AboutUs/>
       }
     ]
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
- <div className=" max-w-screen-2xl  mx-auto overflow-x-hidden">
+ <div className="overflow-x-hidden">
  <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
+
   <Analytics/>
    </div>
 )

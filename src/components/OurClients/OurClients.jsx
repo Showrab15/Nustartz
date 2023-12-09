@@ -1,36 +1,76 @@
-import Marquee from "react-fast-marquee";
-import clientLogo1 from '../../assets/Clients Logo/chatfint.png'
-import clientLogo2 from '../../assets/Clients Logo/give charity.png'
-import clientLogo3 from '../../assets/Clients Logo/intenx.png'
-import clientLogo4 from '../../assets/Clients Logo/mamneta.png'
-import clientLogo5 from '../../assets/Clients Logo/mavio.png'
-import clientLogo6 from '../../assets/Clients Logo/yotta.png'
-import wave from '../../assets/Hero Slider.png'
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+// images:
+import clientLogo1 from "../../assets/Clients Logo/chatfint.png";
+import clientLogo2 from "../../assets/Clients Logo/give charity.png";
+import clientLogo3 from "../../assets/Clients Logo/intenx.png";
+import clientLogo4 from "../../assets/Clients Logo/mamneta.png";
+import clientLogo5 from "../../assets/Clients Logo/mavio.png";
+import clientLogo6 from "../../assets/Clients Logo/yotta.png";
 
 const OurClients = () => {
   return (
-    <div className="py-16 bg-[#FFF]">
-     <h1
-        style={{
-          background:
-            "linear-gradient(269deg, #D4E9F3 33.99%, rgba(217, 217, 217, 0.00) 94.38%)",
-        }}
-        className="text-[#000] text-center text-3xl md:text-5xl font-bold leading-[56px] font-serif w-full py-[18px]"
+    <div className="mb-8 ">
+      <div
+        // style={{
+        //   background:
+        //     "linear-gradient(269deg, #D4E9F3 33.99%, rgba(217, 217, 217, 0.00) 94.38%)",
+        // }}
+        className="py-8 grid grid-cols-1 lg:grid-cols-3 mb-4 bg-white"
       >
-        Our Clients
-
-       
-      </h1>
-      <img className="-mt-5 ml-16" src={wave} alt="" />
-      <Marquee className="mt-10" speed={120}>
-  <img src={clientLogo1} alt="chatfint.png" />
-        <img src={clientLogo3} alt="ntenx.png" />
-        <img src={clientLogo5} alt="mavio.png" />
-        <img src={clientLogo4} alt="mamneta.png" />
-        <img src={clientLogo6} alt="yotta.png" />
-        <img src={clientLogo2} alt="give charity.png" />
-
-      </Marquee>
+        <h1 className="text-[#000] text-center text-3xl md:text-5xl font-bold leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0 -ml-4">
+          Our Clients
+        </h1>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          speed={500}
+          loop={true}
+          showsPagination={false}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper col-span-1 lg:col-span-2"
+        >
+          <SwiperSlide>
+            <img src={clientLogo1} alt="chatfint.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={clientLogo2} alt="give charity.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={clientLogo3} alt="intenx.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={clientLogo4} alt="mamneta.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={clientLogo5} alt="mavio.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={clientLogo6} alt="yotta.png" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 };

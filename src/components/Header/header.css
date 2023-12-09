@@ -1,13 +1,13 @@
 /* Add this CSS in your stylesheet */
-.container {
+/* .container {
     background-image: url('../../assets/bannerandNavbarrightBubble.png'); /* Replace with your image path */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;
+    width: 100%; */
     /* Any additional styles for your container */
-}
+
 
 button.rec-dot{
     background-color: rgb(235, 16, 16);
