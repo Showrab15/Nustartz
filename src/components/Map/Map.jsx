@@ -1,6 +1,7 @@
 import map from '../../assets/map1.png'
 import wave from '../../assets/Hero Slider.png'
 import './map.css'
+import { Link } from 'react-router-dom';
 const Map = () => {
     return (
         <div className="mt-20">
@@ -16,14 +17,16 @@ const Map = () => {
                         <div className="my-3 mx-auto grid md:ml-[80px] ml-0 md:grid-cols-2  lg:grid-cols-3 lg:gap-60 md:gap-[200px] gap-4 text-white">
 
                             <div className="w-[310px] h-[190px] rounded-2xl text-base md:ml-[20px] ml-0 lg:ml-0  main" style={{ backgroundColor: 'rgba(39, 89, 152, 1)' }}>
-
-                                <p className="my-auto flex items-center space-y-2  px-4 py-4 font-serif ">Corporate Headquarters, <br /> Numentica LLC  3868 W Carson St, <br />   Suite 300 Torrance, CA 90503, USA <br />
+                          
+                               <Link to="">
+                               <p className="my-auto flex items-center space-y-2  px-4 py-4 font-serif ">Corporate Headquarters, <br /> Numentica LLC  3868 W Carson St, <br />   Suite 300 Torrance, CA 90503, USA <br />
                                     contact@numentica.com <br /></p>
 
                                 <div className="flex justify-between font-serif">
                                     <p className="pl-4 font-serif"> +1310-818-3415</p>
                                     <p className="font-serif mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full">1</p>
                                 </div>
+                                </Link>
                             </div >
 
                             <div className="md:relative md:-bottom[25px] lg:bottom-16 md:ml-[25px] w-[310px] h-[190px] rounded-2xl text-base py-4 main" style={{ backgroundColor: 'rgba(39, 89, 152, 1)' }}>

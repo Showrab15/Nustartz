@@ -1,3 +1,7 @@
 .team-bg-cover {
-	background: linear-gradient(182deg, #C9DAEF 42.87%, rgba(201, 218, 239, 0.00) 95.49%);
-}
+	background: linear-gradient(
+	  182deg,
+	  #c9daef 42.87%,
+	  rgba(201, 218, 239, 0) 95.49%
+	);
+  }
