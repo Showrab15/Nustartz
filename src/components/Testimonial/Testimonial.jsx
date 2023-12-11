@@ -20,30 +20,47 @@ const Testimonial = () => {
   return (
     
     <>
-    <div className= " lg:-mt-8 pb-10 bgColor bg-[#88B7DA] px-20 mx-auto">
-      <h3 className="text-[#050038] md:text-[38px] text-[20px] text-center py-6 font-bold font-serif  leading-[30px] md:leading-[56px] px-4 md:px-12  mb-10 md:mb-14 ">
+    <div className= " lg:-mt-8 pb-10 bgColor bg-[#88B7DA] md:px-10 mx-auto">
+      <h3 className="text-[#050038] md:text-[35px] lg:text-[38px] text-[20px] text-center py-6 font-bold font-serif  leading-[30px] md:leading-[56px] px-4 md:px-12  mb-10 md:mb-10 ">
       Discover the experiences of 
-our valued  clients   <br className="md:block hidden"/> through their testimonials
+our valued  clients   <br className="lg:block hidden"/> through their testimonials
       </h3>
-      <Swiper
-        spaceBetween={30}
+    <div className="mx-auto flex justify-center ">
+    <Swiper
         freeMode={true}
+        spaceBetween={80}
+        slidesPerView ={1}
+
         pagination={{
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper"
+        className="mySwiper mx-auto flex justify-center"
         breakpoints={{
+          630: {
+            slidesPerView: 2,
+            spaceBetween: 200,
+          },
           768: {
-            slidesPerView: 1,
+            slidesPerView: 2,
+            spaceBetween: 200,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
+            spaceBetween: 200,
           },
+          1268:{
+            slidesPerView: 3,
+            spaceBetween: 70,
+          },
+          3000:{
+            slidesPerView: 4,
+            spaceBetween: 70,
+          }
         }}
       >
         <SwiperSlide>
-            <div className="bg-[#FFF] rounded-[32px] md:h-[470px] px-6 py-6">
+            <div className="bg-[#FFF] rounded-[32px] mx-auto h-[470px] w-[400px] lg:w-full px-6 py-6">
               <img
                 src={person3}
                 className="w-[170px] h-[170px] mx-auto  rounded-full border-4 border-[#88B7DA]"
@@ -65,10 +82,10 @@ our valued  clients   <br className="md:block hidden"/> through their testimonia
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="bg-[#FFF] md:h-[470px]  rounded-[32px] px-6 py-6">
+            <div className=" mx-auto  bg-[#FFF] h-[470px] w-[400px] lg:w-full rounded-[32px] px-6 py-6">
               <img
                 src={person1}
-                className="w-[170px] h-[170px] mx-auto  rounded-full border-4 border-[#88B7DA]"
+                className="md:w-[170px] md:h-[170px] mx-auto  rounded-full border-4 border-[#88B7DA]"
                 alt=""
               />
               <h5 className="text-center text-[#3E005B] text-2xl font-bold leading-9 my-4 font-serif">
@@ -87,7 +104,7 @@ our valued  clients   <br className="md:block hidden"/> through their testimonia
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="bg-[#FFF] md:h-[470px]  rounded-[32px] px-6 py-6">
+            <div className=" mx-auto  bg-[#FFF] h-[470px] w-[400px] lg:w-full rounded-[32px] px-6 py-6">
               <img
                 src={person2}
                 className="w-[170px] h-[170px] mx-auto rounded-full border-4 border-[#88B7DA]"
@@ -109,7 +126,7 @@ our valued  clients   <br className="md:block hidden"/> through their testimonia
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="bg-[#FFF] md:h-[470px]  rounded-[32px] px-6 py-10">
+            <div className=" mx-auto  bg-[#FFF]  h-[470px]  w-[400px] lg:w-full  rounded-[32px] px-6 py-10">
               <img
                 src={person4}
                 className="w-[170px] h-[170px] mx-auto rounded-full border-4 border-[#88B7DA]"
@@ -131,7 +148,7 @@ our valued  clients   <br className="md:block hidden"/> through their testimonia
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="bg-[#FFF]  md:h-[470px]  rounded-[32px] px-6 py-10">
+            <div className=" mx-auto  bg-[#FFF] w-[400px] lg:w-full  h-[470px]  rounded-[32px] px-6 py-10">
               <img
                 src={person5}
                 className="w-[170px] h-[170px] mx-auto rounded-full border-4 border-[#88B7DA]"
@@ -154,6 +171,7 @@ our valued  clients   <br className="md:block hidden"/> through their testimonia
         </SwiperSlide>
       
       </Swiper>
+    </div>
 
     </div>
     {/* <img className="-mt-5 w-full" src={wave} alt="" /> */}
