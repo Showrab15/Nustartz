@@ -1,59 +1,14 @@
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import person from "../../assets/bannerPic1.png";
-// import "./header.css";
-// const Header = () => {
-//   const carouselSettings = {
-//     showArrows: false,
-//     showStatus: false,
-//     infiniteLoop: true,
-//     autoPlay: true,
-//     interval: 3000,
-//     showThumbs: false,
-//   };
-
-//   return (
-//     <div className="relative bottom-[400px] 2xl:bottom-[0px]">
-//       <Carousel {...carouselSettings}>
-//         <div className="flex flex-col lg:flex-row items-center">
-//           <div className="order-2 lg:order-1 px-1 lg:px-0">
-//             <h2 className="text-[#000000] lg:ml-[80px] lg:w-[580px] text-3xl md:text-[40px] font-bold text-left font-serif mt-8 mb-4">
-//               We help you to
-//             </h2>
-//             <p className="text-[#000] lg:ml-[80px] lg:w-[580px] text-xl md:text-[30px] font-medium leading-9 lg:leading-[48px] font-serif text-left">
-//               Elevate your teams capabilities <br /> with our proficient
-//               software <br /> engineers.
-//             </p>
-
-//             <button className="bg-[#275998] relative  py-5 px-10 lg:mr-[360px] rounded-[60px] text-white font-semibold mt-12 ">
-//               Schedule
-//             </button>
-//           </div>
-//           <div className="order-1 lg:order-2 lg:ml-[150px] ml-0">
-//             <img className="w-full lg:h-full xl:overflow-x-hidden xl-mr-4" src={person} alt="" />
-//           </div>
-//         </div>
-//       </Carousel>
-
-//     </div>
-//   );
-// };
-
-// export default Header;
-
-
-
-
-
-
-
+import banner1 from "../../assets/Banner/Banner1.png";
+import banner3 from "../../assets/Banner/Banner3.png";
+import banner4 from "../../assets/Banner/Banner4.png";
+import rectangle1 from "../../assets/Banner/Rectangle.png";
+import rectangle3 from "../../assets/Banner/Rectangle3.png";
+import rectangle4 from "../../assets/Banner/Rectangle4.png";
+import rectangle31 from "../../assets/Banner/Rectangle31.png";
+import rectangle41 from "../../assets/Banner/Rectangle41.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import banner1 from "../../assets/bannerPic1.png";
-import banner3 from "../../assets/banner3.png";
-import banner4 from "../../assets/banner4.png";
 import "./header.css";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const carouselSettings = {
@@ -62,86 +17,108 @@ const Header = () => {
     infiniteLoop: true,
     // autoPlay: true,
     interval: 3000,
-    showThumbs: false,
+    // showThumbs: true,
   };
 
- 
-
   return (
-    <div>
+    <div className="w-full 2xl:w-[1500px] 2xl:mx-auto">
       <Carousel {...carouselSettings}>
         {/* 1st Carousel */}
-        <div className="flex flex-col lg:flex-row items-center justify-center">
-          <div className="order-2 lg:order-1 px-1 lg:px-0 lg:ml-[60px]">
-            <h2 className="text-[#000000] text-3xl md:text-[40px] font-bold text-left font-serif lg:w-[489px] mt-8 mb-4">
-              We help you to
-            </h2>
-            <p className="text-[#000]  lg:w-[498px] text-xl md:text-[30px] font-medium leading-9 lg:leading-[48px] font-serif text-left">
-              Elevate your teams capabilities <br  /> with our proficient
+        <div
+          style={{
+            backgroundImage: `url(${banner1})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+          className="w-full h-[500px] flex justify-end"
+        >
+          <div
+           style={{
+              backgroundImage: `url(${rectangle1})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+            className=" w-[575px] h-[500px] text-white font-serif pt-[90px] pl-[37px] text-start lg:-mt-2 2xl:mt-0"
+          >
+            <h3 className="text-[40px] font-bold">We help you to</h3>
+            <p className="text-[30px] font-medium leading-[48px] mb-6">
+              Elevate your {`team's`} capabilities <br /> with our proficient
               software <br /> engineers.
             </p>
-           <Link to="https://calendly.com/nustartz/30min">
-           <button className="bg-[#275998] py-5 px-10 rounded-[60px] text-white font-semibold mt-4 flex justify-start">
+            <button className="bg-[#275998] rounded-[60px] px-10 py-5 text-xl tracking-[0.081em]">
               Schedule
             </button>
-           </Link>
-          </div>
-          <div className="order-1 lg:order-2 lg:ml-[150px] ml-0 ">
-            <img
-              className="w-full lg:h-full xl:overflow-x-hidden"
-              src={banner1}
-              alt="banner1"
-            />
           </div>
         </div>
-        {/* 2nd Carousel */}
-        <div className="flex flex-col lg:flex-row items-center justify-center">
-          <div className="order-2 lg:order-1 px-1 lg:px-0 mr-[45px] md:mr-0 lg:ml-[60px]">
-            <h2 className="text-[#000000] text-3xl md:text-[40px] font-bold text-left font-serif lg:w-[489px] mt-8 mb-4">
-              Eliminate
-            </h2>
-            <p className="text-[#000]  lg:w-[498px] text-xl md:text-[30px] font-medium leading-9 lg:leading-[48px] font-serif text-left">
-              the burden of recruiting and <br /> training
-            </p>
-            <Link to="https://calendly.com/nustartz/30min">
-           <button className="bg-[#275998] py-5 px-10 rounded-[60px] text-white font-semibold mt-4 md:mt-8 flex justify-start">
-              Schedule
-            </button>
-           </Link>
+        {/* 2nd Carousel*/}
+        <div className="flex">
+          <div>
+            <img src={banner3} className="w-[972px] h-[522px]" alt="" />
           </div>
-          <div className="order-1 lg:order-2 lg:ml-[150px] ml-0">
-            <img
-              className="w-full lg:h-full xl:overflow-x-hidden"
-              src={banner3}
-              alt="banner3"
-            />
+          <div
+            style={{
+              backgroundImage: `url(${rectangle31})`,
+              width: "590px",
+              height: "505px",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+            className="-ml-[5px] -mt-1"
+          >
+            <div
+              style={{
+                backgroundImage: `url(${rectangle3})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+              className="lg:w-[580px] lg:h-[505px] 2xl:w-[600px] 2xl:h-[507px] text-white font-serif pt-[120px] pl-[80px] text-start lg:-ml-[2px] 2xl:-ml-[20px]"
+            >
+              <h3 className="text-[40px] font-bold">Eliminate</h3>
+              <p className="text-[30px] font-medium leading-[48px] mb-6">
+                the burden of recruiting and <br /> training
+              </p>
+              <button className="bg-[#275998] rounded-[60px] px-10 py-5 text-xl tracking-[0.081em]">
+                Schedule
+              </button>
+            </div>
           </div>
         </div>
-        {/* 3rd Carousel */}
-        <div className="flex flex-col lg:flex-row items-center justify-center">
-          <div className="order-2  mr-[45px] md:mr-0  lg:order-1 px-1 lg:px-0 lg:ml-[60px]">
-            <h2 className="text-[#000000] text-3xl md:text-[40px] font-bold text-left font-serif lg:w-[489px] mt-8 mb-4">
-              Retain
-            </h2>
-            <p className="text-[#000]  lg:w-[498px] text-xl md:text-[30px] font-medium leading-9 lg:leading-[48px] font-serif text-left">
-              Absolute authority over your <br /> team whenever you desire
-            </p>
-            <Link to="https://calendly.com/nustartz/30min">
-           <button className="bg-[#275998] py-5 px-10 rounded-[60px] text-white font-semibold mt-4 md:mt-8 flex justify-start">
-              Schedule
-            </button>
-           </Link>
+        {/* 3rd Carousel*/}
+        <div className="flex ] mx-auto">
+          <div>
+            <img src={banner4} className="w-[992px] h-[517px]" alt="" />
           </div>
-          <div className="order-1 lg:order-2 lg:ml-[150px] ml-0">
-            <img
-              className="w-full lg:h-full xl:overflow-x-hidden"
-              src={banner4}
-              alt="banner4"
-            />
+          <div
+            style={{
+              backgroundImage: `url(${rectangle41})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+
+
+              width: "582px",
+              height: "517px",
+            }}
+            className=""
+          >
+            <div
+              style={{
+                backgroundImage: `url(${rectangle4})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+              className="  lg:w-[580px] 2xl:w-[595px] h-[518px] text-white font-serif pt-[150px] pl-[80px] text-start -ml-[15px] 2xl:-ml-[15px] lg:-ml-[3px]"
+            >
+              <h3 className="text-[40px] font-bold">Retain</h3>
+              <p className="text-[30px] font-medium leading-[48px] mb-6">
+              absolute authority over your <br /> team whenever you desire
+              </p>
+              <button className="bg-[#275998] rounded-[60px] px-10 py-5 text-xl tracking-[0.081em]">
+                Schedule
+              </button>
+            </div>
           </div>
         </div>
       </Carousel>
-     
     </div>
   );
 };

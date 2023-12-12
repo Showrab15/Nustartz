@@ -51,7 +51,7 @@ const OurTeam = () => {
               />
             </div>
             <div className="flex flex-col lg:ml-36 -mt-3 md:mt-5 lg:-mt-10">
-              <img className="w-8 h-8 ml-[330px] md:ml-[590px] lg:ml-[450px]" src={quote} alt="" />
+              <img className="w-8 h-8 ml-[320px] md:ml-[590px] lg:ml-[450px]" src={quote} alt="" />
               <p className="font-semibold text-center md:text-[13px] lg:text-[20px]">
                 I believe in the power of innovation and the{" "}
                 <br className="md:block hidden" /> limitless potential of
@@ -84,7 +84,7 @@ const OurTeam = () => {
                 script the <br className="md:block hidden" /> success stories of
                 tomorrow.
               </p>
-              <img className="w-8 h-8 ml-[330px] md:ml-[550px] lg:ml-[410px]" src={quote} alt="" />
+              <img className="w-8 h-8 ml-[320px] md:ml-[550px] lg:ml-[410px]" src={quote} alt="" />
             </div>
             <div className="flex flex-col text-center lg:mt-6 items-center justify-center lg:ml-16 absolute lg:static top-0 md:-top-4 bottom-16 md:bottom-0 left-0 right-0">
               <h3 className="text-3xl md:text-4xl font-bold mb-2">
@@ -124,7 +124,7 @@ const OurTeam = () => {
               />
             </div>
             <div className="flex flex-col lg:ml-36 -mt-3 md:mt-1 lg:-mt-10">
-            <img className="w-8 h-8 ml-[330px] md:ml-[590px] lg:ml-[450px]" src={quote} alt="" />
+            <img className="w-8 h-8 ml-[320px] md:ml-[590px] lg:ml-[450px]" src={quote} alt="" />
             <p className="font-semibold text-center md:text-[13px] lg:text-[20px] md:mt-0  mt-8">
                 My passion lies in harnessing technology to
                 <br className="md:block hidden" /> drive transformative change.

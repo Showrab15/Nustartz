@@ -9,12 +9,15 @@ import "./index.css";
 import { Analytics } from '@vercel/analytics/react';
 import Home from './Pages/Home/Home';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import Offerings from './Pages/Offerings/Offerings';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage/>,
     children:[
       {
         path : '/',
@@ -23,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/about-Us',
         element: <AboutUs/>
+      },
+      {
+        path: '/offerings',
+        element: <Offerings/>
       }
     ]
   },

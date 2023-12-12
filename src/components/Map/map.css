@@ -37,7 +37,7 @@
 .pin {
   width: 20px;
   height: 20px;
-  background-color: #ff0000; /* Adjust color as needed */
+  background-color: linear-gradient(182deg,#c9daef 95.87%,rgba(201, 218, 239, 0) 9425.49%);
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
 }
@@ -46,7 +46,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid #ff0000; /* Adjust color as needed */
+  border: 2px solid rgba(39, 89, 152, 1); /* Adjust color as needed */
   position: absolute;
   top: 50%;
   left: 50%;

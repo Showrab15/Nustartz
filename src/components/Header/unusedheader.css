@@ -1,0 +1,54 @@
+/* Add this CSS in your stylesheet */
+/* .container {
+    background-image: url('../../assets/bannerandNavbarrightBubble.png'); /* Replace with your image path */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; */
+    /* Any additional styles for your container */
+
+
+button.rec-dot{
+    background-color: rgb(235, 16, 16);
+    box-shadow: 0 0 1px 3px rgba(235, 16, 16, 0.5);
+  }
+  
+  button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    box-shadow: 0 0 1px 3px rgba(235,16,16,0.5);
+  }
+
+  /* styles.css */
+/* Example styles */
+.carousel .control-dots .dot {
+  background-color: #275998;
+  padding-top: 10px; /* Change to the color you desire */
+  /* Add any other styles you want to modify */
+}
+
+/* styles.css */
+/* Default position for buttons */
+/* .carousel .control-dots {
+  position: absolute;
+  left: 45%;
+  transform: translateX(-50%);
+  z-index: 999;
+} */
+
+/* Media query for smaller devices */
+/* @media (max-width: 768px) {
+  .carousel .control-dots {
+    top: 503px;
+    left: 55% /* Adjust the distance from the top for smaller devices */
+    /* You can adjust other properties for smaller devices here */
+  /* }
+} */ 
+
+/* Media query for larger devices */
+/* @media (min-width: 1024px) {
+  .carousel .control-dots {
+    top: 485px; /* Adjust the distance from the top for larger devices */
+    /* You can adjust other properties for larger devices here */
+  /* }
+} */
+

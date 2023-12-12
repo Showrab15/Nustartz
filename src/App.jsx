@@ -14,6 +14,7 @@ function App() {
 
   // Check if the current path is '/about-Us'
   const isAboutUsPage = location.pathname === '/about-Us';
+  const isOfferingsPage = location.pathname === '/offerings';
 
   // dependency array to trigger the effect only once when the component mounts
 
@@ -28,7 +29,7 @@ function App() {
         className="w-full  pb-10 "
       >
         <Navbar1 />
-        {!isAboutUsPage && <Header />} {/* Conditionally render Header */}
+        {!isAboutUsPage && !isOfferingsPage && <Header />} {/* Conditionally render Header */}
       </div>
 
       <Outlet />

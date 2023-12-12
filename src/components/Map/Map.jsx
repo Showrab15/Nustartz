@@ -2,7 +2,33 @@ import map from '../../assets/map1.png'
 import wave from '../../assets/Hero Slider.png'
 import './map.css'
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 const Map = () => {
+
+    const [clickedLocation, setClickedLocation] = useState(null);
+    const [clickedLocations, setClickedLocations] = useState(Array(8).fill(false));
+  
+    const handleClick = (index) => {
+      setClickedLocation(index);
+    };
+  
+    useEffect(() => {
+      let hideIndicators;
+      if (clickedLocation !== null) {
+        const updatedClickedLocations = Array(8).fill(false);
+        updatedClickedLocations[clickedLocation] = true;
+        setClickedLocation(null);
+        setClickedLocations(updatedClickedLocations);
+  
+        hideIndicators = setTimeout(() => {
+          setClickedLocations(Array(8).fill(false));
+        }, 20); // Hide the indicators after 200 seconds (200000 milliseconds)
+      }
+  
+      return () => clearTimeout(hideIndicators);
+    }, [clickedLocation]);
+  
+  
     return (
         <div className="mt-20">
             <div className="mt-16 lg:mb-20 md:mb-52  mb-[1550px]  py-14">
@@ -17,15 +43,32 @@ const Map = () => {
                         <div className="my-3 mx-auto grid md:ml-[80px] ml-0 md:grid-cols-2  lg:grid-cols-3 lg:gap-60 md:gap-[200px] gap-4 text-white">
 
                             <div className="w-[310px] h-[190px] rounded-2xl text-base md:ml-[20px] ml-0 lg:ml-0  main" style={{ backgroundColor: 'rgba(39, 89, 152, 1)' }}>
-                          
-                               <Link to="https://maps.app.goo.gl/A1BBVX5XTSJWZc1y9">
-                               <p className="my-auto flex items-center space-y-2  px-4 py-4 font-serif ">Corporate Headquarters, <br /> Numentica LLC  3868 W Carson St, <br />   Suite 300 Torrance, CA 90503, USA <br />
-                                    contact@numentica.com <br /></p>
 
-                                <div className="flex justify-between font-serif">
-                                    <p className="pl-4 font-serif"> +1310-818-3415</p>
-                                    <p className="font-serif mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full">1</p>
-                                </div>
+                                <Link to="">
+                                    <p className="my-auto flex items-center space-y-2  px-4 py-4 font-serif ">Corporate Headquarters, <br /> Numentica LLC  3868 W Carson St, <br />   Suite 300 Torrance, CA 90503, USA <br />
+                                        contact@numentica.com <br /></p>
+
+                                    <div className="flex justify-between font-serif">
+                                        <p className="pl-4 font-serif"> +1310-818-3415</p>
+                                        {clickedLocations[0] ? (
+            <div className="location-container  relative 2xl:top-7 2xl:right-11 lg:right-11 lg:top-7">
+              <div className="marker">
+                <div className="pulse"></div>
+                <div className="pin"></div>
+              </div>
+            </div>
+          ) : (
+            <p
+              className="font-serif cursor-pointer mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full"
+              onClick={() => handleClick(0)}
+            >
+              1
+            </p>
+          )}
+
+
+          
+                                    </div>
                                 </Link>
                             </div >
 
@@ -37,7 +80,21 @@ const Map = () => {
 
                                 <div className="flex justify-between">
                                     <p className="pl-4 font-serif"> +44-20-3371-1046</p>
-                                    <p className="font-serif mr-4 bg-white border-black border-2 text-black font-bold px-4 py-2 rounded-full">2</p>
+                                    {clickedLocations[1] ? (
+            <div className="location-container 2xl:top-[105px] 2xl:right-[423px] lg:right-[424px] lg:top-[105px]">
+              <div className="marker">
+                <div className="pulse"></div>
+                <div className="pin"></div>
+              </div>
+            </div>
+          ) : (
+            <p
+              className="font-serif cursor-pointer mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full"
+              onClick={() => handleClick(1)}
+            >
+              2
+            </p>
+          )}
                                 </div>
                             </div >
                             {/* hi */}
@@ -48,7 +105,21 @@ const Map = () => {
 
                                 <div className="flex justify-between">
                                     <p className="pl-4">contact@numentica.com</p>
-                                    <p className="mr-4 bg-white border-black border-2 text-black font-bold px-4 py-2 rounded-full">3</p>
+                                    {clickedLocations[2] ? (
+            <div className="location-container 2xl:top-[50px] 2xl:right-[516px] lg:right-[516px] lg:top-[50px]">
+              <div className="marker">
+                <div className="pulse"></div>
+                <div className="pin"></div>
+              </div>
+            </div>
+          ) : (
+            <p
+              className="font-serif cursor-pointer mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full"
+              onClick={() => handleClick(2)}
+            >
+              3
+            </p>
+          )}
                                 </div>
                             </div >
                         </div>
@@ -68,7 +139,21 @@ const Map = () => {
 
                                 <div className="flex justify-between font-serif">
                                     <p className="pl-4 font-serif"> +1310-818-3415</p>
-                                    <p className="font-serif mr-4 bg-white border-black border-2 text-black font-bold px-4 py-2 rounded-full">4</p>
+                                    {clickedLocations[3] ? (
+            <div className="location-container 2xl:bottom-[200px] 2xl:left-[433px]  lg:bottom-[203px] lg:left-[430px]">
+              <div className="marker">
+                <div className="pulse"></div>
+                <div className="pin"></div>
+              </div>
+            </div>
+          ) : (
+            <p
+              className="font-serif cursor-pointer mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full"
+              onClick={() => handleClick(3)}
+            >
+              4
+            </p>
+          )}
                                 </div>
                             </div >
 
@@ -80,7 +165,21 @@ const Map = () => {
 
                                 <div className="flex justify-between">
                                     <p className="pl-4 font-serif"> +44-20-3371-1046</p>
-                                    <p className="font-serif mr-4 bg-white border-black border-2 text-black font-bold px-4 py-2 rounded-full">5</p>
+                                    {clickedLocations[4] ? (
+            <div className="location-container 2xl:bottom-[155px] 2xl:left-[95px] lg:bottom-[155px] lg:left-[95px]">
+              <div className="marker">
+                <div className="pulse"></div>
+                <div className="pin"></div>
+              </div>
+            </div>
+          ) : (
+            <p
+              className="font-serif cursor-pointer mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full"
+              onClick={() => handleClick(4)}
+            >
+              5
+            </p>
+          )}
                                 </div>
                             </div >
 
@@ -91,7 +190,21 @@ const Map = () => {
 
                                 <div className="flex justify-between">
                                     <p className="pl-4">contact@numentica.com</p>
-                                    <p className="mr-4 bg-white border-black border-2 text-black font-bold px-4 py-2 rounded-full">6</p>
+                                    {clickedLocations[5] ? (
+            <div className="location-container 2xl:bottom-[73px] 2xl:right-[288px] lg:bottom-[73px] lg:right-[287px]">
+              <div className="marker">
+                <div className="pulse"></div>
+                <div className="pin"></div>
+              </div>
+            </div>
+          ) : (
+            <p
+              className="font-serif cursor-pointer mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full"
+              onClick={() => handleClick(5)}
+            >
+              6
+            </p>
+          )}
                                 </div>
                             </div >
                         </div>
@@ -114,7 +227,21 @@ const Map = () => {
 
                                 <div className="flex justify-between font-serif">
                                     <p className="pl-4 font-serif"> +1310-818-3415</p>
-                                    <p className="font-serif mr-4 bg-white border-black border-2 text-black font-bold px-4 py-2 rounded-full">7</p>
+                                    {clickedLocations[6] ? (
+            <div className="location-container 2xl:bottom-[354px] 2xl:left-[107px] lg:bottom-[354px] lg:left-[107px]">
+              <div className="marker">
+                <div className="pulse"></div>
+                <div className="pin"></div>
+              </div>
+            </div>
+          ) : (
+            <p
+              className="font-serif cursor-pointer mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full"
+              onClick={() => handleClick(6)}
+            >
+              7
+            </p>
+          )}
                                 </div>
                             </div >
 
@@ -126,7 +253,21 @@ const Map = () => {
 
                                 <div className="flex justify-between">
                                     <p className="pl-4 font-serif"> +44-20-3371-1046</p>
-                                    <p className="font-serif mr-4 bg-white border-black border-2 text-black font-bold px-4 py-2 rounded-full">8</p>
+                                    {clickedLocations[7] ? (
+            <div className="location-container -mt-8">
+              <div className="marker">
+                <div className="pulse"></div>
+                <div className="pin"></div>
+              </div>
+            </div>
+          ) : (
+            <p
+              className="font-serif cursor-pointer mr-4 px-4 py-2 bg-white border-black border-2 text-black font-bold rounded-full"
+              onClick={() => handleClick(7)}
+            >
+              8
+            </p>
+          )}
                                 </div>
                             </div >
 
