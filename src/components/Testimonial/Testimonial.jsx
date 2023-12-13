@@ -5,7 +5,8 @@ import person3 from "../../assets/Testimonials Person/mynainsights_logo 1.png";
 import person4 from "../../assets/Testimonials Person/low-angle-handsome-smiley-man1.png";
 import person5 from "../../assets/Testimonials Person/portrait-good-looking-smiling-arabic-man-suit-attractive-young-businessman-with-beard-moustache-looking-camera-portrait-international-beauty-concept 1.png";
 import star from "../../assets/star.svg";
-// import wave from '../../assets/Hero Slider.png'
+ import wave from '../../assets/Hero Slider.png'
+ 
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,7 +21,7 @@ const Testimonial = () => {
   return (
     
     <>
-    <div className= " lg:-mt-8 pb-10 bgColor bg-[#88B7DA] md:px-10 mx-auto">
+    <div className= " lg:mt-12 pb-10 bgColor bg-[#88B7DA] md:px-10 mx-auto">
       <h3 className="text-[#050038] md:text-[35px] lg:text-[38px] text-[20px] text-center py-6 font-bold font-serif  leading-[30px] md:leading-[56px] px-4 md:px-12  mb-10 md:mb-10 ">
       Discover the experiences of 
 our valued  clients   <br className="lg:block hidden"/> through their testimonials
@@ -174,7 +175,7 @@ our valued  clients   <br className="lg:block hidden"/> through their testimonia
     </div>
 
     </div>
-    {/* <img className="-mt-5 w-full" src={wave} alt="" /> */}
+     <img className="-mt-5 w-full" src={wave} alt="" /> 
     </>
 
   );

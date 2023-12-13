@@ -8,15 +8,21 @@ import clientLogo3 from "../../assets/Clients Logo/intenx.png";
 import clientLogo4 from "../../assets/Clients Logo/mamneta.png";
 import clientLogo5 from "../../assets/Clients Logo/mavio.png";
 import clientLogo6 from "../../assets/Clients Logo/yotta.png";
+import wave from '../../assets/Hero Slider.png'
 
 const OurClients = () => {
   return (
-    <div className="mb-8 ">
+    <>
+     <div style={{
+      background:
+        "linear-gradient(100.72deg, #F9F9F9 -12.83%, #2370C8 104.22%)",
+    }}
+     className="bg-[linear-gradient(100.72deg, #F9F9F9 -12.83%, #2370C8 104.22%)] mt-8">
       <div
 
-        className="py-8 grid grid-cols-1 lg:grid-cols-3 mb-4 bg-white"
+        className="py-8 grid grid-cols-1 lg:grid-cols-3 mb-8  "
       >
-        <h1 className="text-[#000] text-center text-3xl md:text-5xl font-bold leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0 md:-ml-4">
+        <h1 className="text-[#000] text-center text-2xl md:text-5xl font-bold leading-[30px] md:leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0 md:-ml-4">
           Our Clients
         </h1>
         <Swiper
@@ -48,26 +54,30 @@ const OurClients = () => {
           className="mySwiper col-span-1 lg:col-span-2"
         >
           <SwiperSlide>
-            <img className="mx-auto" src={clientLogo1} alt="chatfint.png" />
+            <img className="mx-auto cursor-pointer" src={clientLogo1} alt="chatfint.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={clientLogo2} alt="give charity.png" />
+            <img className="mx-auto  cursor-pointer" src={clientLogo2} alt="give charity.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={clientLogo3} alt="intenx.png" />
+            <img className="mx-auto  cursor-pointer" src={clientLogo3} alt="intenx.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={clientLogo4} alt="mamneta.png" />
+            <img className="mx-auto  cursor-pointer" src={clientLogo4} alt="mamneta.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={clientLogo5} alt="mavio.png" />
+            <img className="mx-auto  cursor-pointer" src={clientLogo5} alt="mavio.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={clientLogo6} alt="yotta.png" />
+            <img className="mx-auto  cursor-pointer" src={clientLogo6} alt="yotta.png" />
           </SwiperSlide>
         </Swiper>
       </div>
     </div>
+     <img className="-mt-9 w-full lg:block hidden" src={wave} alt="" /> 
+
+    </>
+   
   );
 };
 

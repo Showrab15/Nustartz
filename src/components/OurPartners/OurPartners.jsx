@@ -17,12 +17,16 @@ const OurPartners = () => {
   return (
 
 
-    <div className="">
+    <div style={{
+      background:
+        "linear-gradient(100.72deg, #F9F9F9 -12.83%, #2370C8 104.22%)",
+    }}
+     className="bg-[linear-gradient(100.72deg, #F9F9F9 -12.83%, #2370C8 104.22%)] mt-8">
       <div
 
-        className="py-12 grid grid-cols-1 lg:grid-cols-3  bg-white"
+        className="py-8 grid grid-cols-1 lg:grid-cols-3  "
       >
-        <h1 className="text-[#000] text-center text-3xl md:text-5xl font-bold leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0">
+        <h1 className="text-[#000] text-center text-2xl md:text-5xl font-bold  leading-[30px] md:leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0">
           Our Partners
         </h1>
         <Swiper
@@ -54,31 +58,31 @@ const OurPartners = () => {
           className="mySwiper col-span-1 lg:col-span-2 mx-auto"
         >
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo1} alt="chatfint.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo1} alt="chatfint.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo2} alt="give charity.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo2} alt="give charity.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo3} alt="intenx.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo3} alt="intenx.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo4} alt="mamneta.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo4} alt="mamneta.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo5} alt="mavio.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo5} alt="mavio.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo6} alt="yotta.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo6} alt="yotta.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo7} alt="yotta.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo7} alt="yotta.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo8} alt="yotta.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo8} alt="yotta.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="mx-auto" src={partnerLogo9} alt="yotta.png" />
+            <img className="mx-auto cursor-pointer" src={partnerLogo9} alt="yotta.png" />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -3,13 +3,11 @@ import WhyUs from "../../components/WhyUs/WhyUs";
 import {Analytics} from '@vercel/analytics/react'
 import OurClients from "../../components/OurClients/OurClients";
 import OurPartners from "../../components/OurPartners/OurPartners";
-import Map from '../../components/Map/Map'
+import Achievement from "../../components/Achievement/Achievement";
+// import Map from '../../components/Map/Map'
 function Home() {
   return (
-    <div   style={{
-        background:
-          "linear-gradient(100.72deg, #F9F9F9 -12.83%, #2370C8 104.22%)",
-      }} >
+    <div  >
       {/* <div
         style={{
           background:
@@ -21,10 +19,10 @@ function Home() {
         <Header />
       </div> */}
       <WhyUs />
-      {/* <Achievement /> */}
+      <Achievement/>
       <OurPartners/>
       <OurClients/>
-      <Map/>
+      {/* <Map/> */}
       <Testimonial />
       {/* <Footer/> */}
       <Analytics/>

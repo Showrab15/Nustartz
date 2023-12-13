@@ -22,11 +22,8 @@ function App() {
   return (
     <div>
       <div
-        style={{
-          background:
-            "linear-gradient(100.72deg, #F9F9F9 -12.83%, #2370C8 104.22%)",
-        }}
-        className="w-full  pb-10 "
+        
+        className="w-full   "
       >
         <Navbar1 />
         {!isAboutUsPage && !isOfferingsPage && <Header />} {/* Conditionally render Header */}

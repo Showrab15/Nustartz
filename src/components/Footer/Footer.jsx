@@ -9,12 +9,12 @@ const Footer = () => {
   const isAboutUsPage = location.pathname === '/about-Us';
   
   // Define the classes for the footer based on the route
-  const footerClasses = isAboutUsPage ? 'mt-20' : '-mt-6';
+  const footerClasses = isAboutUsPage ? 'mt-20' : '';
   
     return (
-        <footer className={footerClasses}>
+        <footer className="mt-10">
         <div className="bgColor  text-black font-serif">
-                <div className="container mx-auto pt-4 lg:pt-32 px-3">
+                <div className=" mx-auto pt-4 lg:pt-8 px-3">
                     <div className='grid mx-auto ml-0 md:ml-[160px] md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-11'>
                         <div>
                             <img className="w-52 mb-5" src='https://i.ibb.co/1XYk81B/Steve-logo-copy-2-1.png' alt="" />
