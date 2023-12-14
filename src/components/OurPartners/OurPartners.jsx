@@ -7,28 +7,28 @@ import partnerLogo6 from '../../assets/Partners Logo/talend.png'
 import partnerLogo7 from '../../assets/Partners Logo/PRivitar.png'
 import partnerLogo8 from '../../assets/Partners Logo/informatica.png'
 import partnerLogo9 from '../../assets/Partners Logo/preciesley work.png'
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Swiper from 'react-id-swiper';
 
+import wave from '../../assets/Hero Slider.png'
 
 const OurPartners = () => {
   return (
+    <>
+    <div 
+   className=" mt-8 "
+    >
+     <div className="bg-[#D4EAF4]" >
+     <h1  className="text-[#000] py-1 text-center text-2xl md:text-5xl font-bold leading-[30px] md:leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0 md:-ml-4">
+         Our Partners
+       </h1>
+       <img className="-mt-2 w-full lg:block hidden" src={wave} alt="" /> 
 
+     </div>
+     <div
 
-    <div style={{
-      background:
-        "linear-gradient(100.72deg, #F9F9F9 -12.83%, #2370C8 104.22%)",
-    }}
-     className="bg-[linear-gradient(100.72deg, #F9F9F9 -12.83%, #2370C8 104.22%)] mt-8">
-      <div
-
-        className="py-8 grid grid-cols-1 lg:grid-cols-3  "
-      >
-        <h1 className="text-[#000] text-center text-2xl md:text-5xl font-bold  leading-[30px] md:leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0">
-          Our Partners
-        </h1>
+       className="py-8 grid grid-cols-1 lg:grid-cols-1 mb-8  "
+     >
+      
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -54,39 +54,22 @@ const OurPartners = () => {
             },
           }}
           navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper col-span-1 lg:col-span-2 mx-auto"
+          className=" col-span-1 lg:col-span-2 mx-auto"
         >
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo1} alt="chatfint.png" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo2} alt="give charity.png" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo3} alt="intenx.png" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo4} alt="mamneta.png" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo5} alt="mavio.png" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo6} alt="yotta.png" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo7} alt="yotta.png" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo8} alt="yotta.png" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img className="mx-auto cursor-pointer" src={partnerLogo9} alt="yotta.png" />
-          </SwiperSlide>
         </Swiper>
-      </div>
+        </div>
     </div>
+
+    </>
   );
 };
 

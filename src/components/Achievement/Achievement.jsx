@@ -11,8 +11,8 @@ const Achievement = () => {
   return (
     <div className="mx-auto">
      <div className="px-4 md:px-8 lg:px-12 mt-14 py-4 mx-auto">
-      <h1 className="text-[#050038] text-center font-bold text-5xl leading-10 tracking-wider font-sans mb-[45px]">
-        Achivemenst of new startz
+      <h1 className="text-[#050038] text-center font-bold text-3xl md:text-5xl leading-10 tracking-wider font-sans mb-[45px]">
+      Achievement of NuStartz
       </h1>
       <p className="text-[#050038] text-center text-lg font-sans leading-6 mb-10 underline">
         Contact Sales to request a demo

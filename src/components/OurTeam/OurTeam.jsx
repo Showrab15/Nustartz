@@ -8,17 +8,16 @@ import leader3 from "../../assets/Our teams/Arun circle 1.png";
 import leader4 from "../../assets/Our teams/mohan  circle.png";
 import leader5 from "../../assets/Our teams/Reena Circle 1.png";
 // Social Link image:
-import linkedInIcon from "../../assets/Our teams/mdi_linkedin.png";
 import leftQuote from "../../assets/Our teams/left-quote.png";
 import quote from "../../assets/Our teams/teenyicons_quote-solid.png";
 import "./OurTeam.css";
 
 const OurTeam = () => {
   return (
-    <div className="team-bg-cover pb-12">
+    <div className="team-bg-cover pb-12 ">
       <div className=" font-serif py-4">
         <div className="mx-auto">
-          <h1 className="text-[25px] md:text-[50px] font-normal text-center py-8">
+          <h1 className="text-[25px] mt-20 lg:text-[50px] font-normal text-center py-8">
             MEET OUR <span className="font-extrabold">LEADERS</span>
           </h1>
           <p className="font-bold  text-[20px] md:text-[35px] lg:text-[40px] text-center text-[#275998] mb-28">
@@ -27,45 +26,46 @@ const OurTeam = () => {
             and Passion That Powers Our Vision
           </p>
         </div>
-        <div className="flex flex-col mt-6 gap-28 lg:gap-12 lg:w-[1255px] 2xl:mx-auto">
+        <div className="flex flex-col mt-6 gap-28 lg:gap-12 lg:w-[1255px] 2xl:mx-auto lg:mt-[250px]">
+
           {/* first box */}
-          <div className="bg-[#275998] text-white lg:h-[310px] lg:w-[1255px] p-4 lg:flex items-center mt-20 md:mt-40 lg:mt-0 lg:ml-24">
+          <div className="bg-[#275998] rounded-xl  text-white  mx-auto w-full justify-center  flex flex-col md:mt-[190px] lg:mt-0  items-center lg:ml-12 mt-20 ">
+
             <div>
-              <img
-                className="lg:w-[592px] lg:h-[600px] ml-4 md:ml-48 lg:-ml-[155px] -mt-[215px] md:-mt-80 lg:mt-10"
+              <img className="lg:w-[402px] lg:h-[504.4px] mx-auto ml-6 -mt-[215px] md:-mt-[290px] lg:-mt-[250px]"
                 src={Siva}
                 alt=""
               />
             </div>
-            <div className="flex flex-col text-center -mt-[100px] md:-mt-32 lg:mt-8 lg:-ml-[220px] items-center justify-center">
-              <h3 className="text-3xl md:text-4xl font-bold mb-2">
+
+            <div className="flex flex-col text-center lg:-mt-[140px] -mt-32 md:-mt-[175px] items-center justify-center">
+              <h3 className="text-[16px] lg:text-[36px] font-bold">
                 Siva Periyasamy
               </h3>
-              <h4 className="text-3xl md:text-4xl font-medium mb-3 lg:mb-6">
+              <h4 className="text-[12px] lg:text-[25px] font-medium ">
                 Founder/President
               </h4>
-              <img
-                className="w-[57px] h-[57px] mx-auto lg:mr-0"
-                src={linkedInIcon}
-                alt=""
-              />
+
             </div>
-            <div className="flex flex-col lg:ml-36 -mt-3 md:mt-5 lg:-mt-10">
-              <img className="w-8 h-8 ml-[320px] md:ml-[590px] lg:ml-[450px]" src={quote} alt="" />
-              <p className="font-semibold text-center md:text-[13px] lg:text-[20px]">
+
+            <div className="flex  ">
+              <img className="justify-start h-6 w-6 lg:w-8 lg:h-8 " src={leftQuote} alt="" />
+              <p className="font-medium text-center p-2 text-[9px] lg:text-[20px]">
                 I believe in the power of innovation and the{" "}
-                <br className="md:block hidden" /> limitless potential of
-                startups. Our team is <br className="md:block hidden" />{" "}
+                limitless potential of
+                startups.  <br className="lg:block hidden" /> Our team is {" "}
                 dedicated to nurturing and empowering the{" "}
-                <br className="md:block hidden " /> next generation of
-                entrepreneurs as they <br className="md:block hidden" /> chart
+                <br className="lg:block hidden " /> next generation of
+                entrepreneurs as they <br className="lg:block hidden" /> chart
                 their course toward success.
               </p>
-              <img className="w-8 h-8 md:ml-64 lg:ml-4" src={leftQuote} alt="" />
+              <img className="h-6 w-6 lg:w-8 lg:h-8  lg:ml-4  " src={quote} alt="" />
             </div>
+
           </div>
+
           {/* second box */}
-          <div className="bg-[#275998] text-white lg:h-[310px] p-4 lg:flex items-center mt-28 md:mt-60 lg:mt-0 relative lg:static">
+          {/* <div className="bg-[#275998] text-white lg:h-[310px] p-4 lg:flex items-center mt-28 md:mt-60 lg:mt-0 relative lg:static">
             <div className="lg:hidden -ml-6 md:ml-40">
               <img
                 className="-mt-[200px] md:-mt-80"
@@ -102,9 +102,10 @@ const OurTeam = () => {
             <div className="hidden lg:block lg:-mr-[170px] mt-12">
               <img className="" src={Steve} alt="" />
             </div>
-          </div>
+          </div> */}
+
           {/* Third box */}
-          <div className="bg-[#275998] text-white lg:h-[310px] lg:w-[1255px] p-4 lg:flex items-center mt-28  md:mt-[190px] lg:mt-0 lg:ml-24">
+          {/* <div className="bg-[#275998] text-white lg:h-[310px] lg:w-[1255px] p-4 lg:flex items-center mt-28  md:mt-[190px] lg:mt-0 lg:ml-24">
             <div>
               <img
                 className="lg:w-[592px] lg:h-[560px]  md:ml-40 lg:-ml-[170px] -mt-[215px] md:-mt-[290px] lg:mt-10"
@@ -113,8 +114,8 @@ const OurTeam = () => {
               />
             </div>
             <div className="flex flex-col text-center -mt-[85px] md:-mt-28 lg:mt-8 lg:-ml-[220px] items-center justify-center">
-            <h3 className="text-3xl md:text-4xl font-bold mb-2">Dinesh</h3>
-            <h4 className="text-3xl md:text-4xl font-medium mb-3 lg:mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold mb-2">Dinesh</h3>
+              <h4 className="text-3xl md:text-4xl font-medium mb-3 lg:mb-6">
                 Chief Technology <br /> Officer
               </h4>
               <img
@@ -124,8 +125,8 @@ const OurTeam = () => {
               />
             </div>
             <div className="flex flex-col lg:ml-36 -mt-3 md:mt-1 lg:-mt-10">
-            <img className="w-8 h-8 ml-[320px] md:ml-[590px] lg:ml-[450px]" src={quote} alt="" />
-            <p className="font-semibold text-center md:text-[13px] lg:text-[20px] md:mt-0  mt-8">
+              <img className="w-8 h-8 ml-[320px] md:ml-[590px] lg:ml-[450px]" src={quote} alt="" />
+              <p className="font-semibold text-center md:text-[13px] lg:text-[20px] md:mt-0  mt-8">
                 My passion lies in harnessing technology to
                 <br className="md:block hidden" /> drive transformative change.
                 {`I'm`} here to <br className="md:block hidden" />
@@ -136,7 +137,8 @@ const OurTeam = () => {
               </p>
               <img className="w-8 h-8 md:ml-64 lg:ml-4" src={leftQuote} alt="" />
             </div>
-          </div>
+          </div> */}
+
         </div>
       </div>
 

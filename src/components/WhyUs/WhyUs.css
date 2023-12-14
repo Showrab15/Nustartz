@@ -1,3 +1,15 @@
 .bgColor {
 	background: linear-gradient(269deg, #D4E9F3 33.99%, rgba(217, 217, 217, 0.00) 94.38%);
 }
+.chart-image {
+	transition: transform 0.3s ease-in-out; /* Adding a smooth transition effect */
+  }
+  
+  .chart-image:hover {
+	transform: scale(1.1); /* Zoom in effect on hover */
+  }
+  
+  .chart-container:hover .text-movedown {
+	transform: translateY(10px); /* Move text down on hover */
+  }  
+  
