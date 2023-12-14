@@ -1,9 +1,8 @@
 import "./Testimonial.css";
-import person1 from "../../assets/Testimonials Person/fashionable-young-woman-standing-front-blue-backdrop 1.png";
-import person2 from "../../assets/Testimonials Person/medium-shot-smiley-man-posing 1.png";
-import person3 from "../../assets/Testimonials Person/mynainsights_logo 1.png";
-import person4 from "../../assets/Testimonials Person/low-angle-handsome-smiley-man1.png";
-import person5 from "../../assets/Testimonials Person/portrait-good-looking-smiling-arabic-man-suit-attractive-young-businessman-with-beard-moustache-looking-camera-portrait-international-beauty-concept 1.png";
+import person1 from "../../assets/Testimonials Person/Carrer Journey res.png";
+import person2 from "../../assets/Testimonials Person/mynainsights_logo 1.png";
+import person3 from "../../assets/Testimonials Person/yotta.png";
+import person4 from "../../assets/Testimonials Person/intenx.png";
 import star from "../../assets/star.svg";
 // import wave from '../../assets/Hero Slider.png'
 
@@ -22,8 +21,8 @@ const Testimonial = () => {
   return (
     <div className="2xl:w-[1500px] mx-auto">
    
-      <div className=" lg:-mt-8 pb-10 bg-[#fff] md:px-10 mx-auto">
-        <h3 className="text-[#050038] md:text-[35px] lg:text-[38px] text-[20px] text-center py-6 font-bold font-serif  leading-[30px] md:leading-[56px] px-4 md:px-12  mb-10 md:mb-10 ">
+      <div className="  pb-10 bg-[#fff] md:px-10 mx-auto">
+        <h3 className="text-[#050038] md:text-[35px] lg:text-[38px] text-[20px] text-center py-6 font-bold font-serif  leading-[30px] md:leading-[56px] px-4 md:px-12  mb-10  ">
           Discover the experiences of our valued clients{" "}
           <br className="lg:block hidden" /> through their testimonials
         </h3>
@@ -38,45 +37,24 @@ const Testimonial = () => {
             modules={[Pagination, Navigation]}
             className="mySwiper testimonialSwiper"
           >
-            <SwiperSlide>
-              <div className="w-full lg:h-[470px] px-6 py-6">
-                <img
-                  src={person3}
-                  className="w-[170px] h-[170px] mx-auto"
-                  alt=""
-                />
-                <p className="text-center text-[15px] text-[#999] font-serif mt-16 w-full lg:w-[800px] mx-auto">
-                  “NuStartz has been an exceptional partner in digital
-                  marketing. Their strategies and dedication have significantly
-                  boosted our digital presence. We highly recommend NuStartz for
-                  anyone seeking impactful digital marketing solutions.”
-                </p>
-                <h5 className="text-center text-[#333] text-2xl font-bold leading-9 my-6 font-serif">
-                  Myna Insights
-                </h5>
-                <div className="flex justify-center gap-2">
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                </div>
-              </div>
-            </SwiperSlide>
+           
             <SwiperSlide>
               <div className="w-full h-[470px] px-6 py-6">
                 <img
                   src={person1}
-                  className="w-[170px] h-[170px] mx-auto"
+                  className="lg:w-[450px] mx-auto"
                   alt=""
                 />
-                <p className="text-center text-[15px] text-[#999] font-serif mt-16 w-full lg:w-[800px] mx-auto">
+                 <h5 className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9  font-serif">
+                 CareerJourney 
+                </h5>
+                <p className="text-center  text-[10px] md:text-[15px]     text-[#999] font-serif mt-8 w-full lg:w-[800px] mx-auto">
                   “NuStartz has been a game-changer for my business. Their
                   digital marketing expertise is top-notch, and {`they've`}{" "}
                   significantly improved my online presence. {`I'm`} thrilled
                   with the results.”
                 </p>
-                <h5 className="text-center text-[#333] text-2xl font-bold leading-9 my-6 font-serif">
+                <h5  className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9 my-6 font-serif">
                   Leena George
                 </h5>
                 <div className="flex justify-center gap-2">
@@ -88,20 +66,55 @@ const Testimonial = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="w-full h-[470px] px-6 py-6">
+
+          {/* second slider */}
+          <SwiperSlide>
+              <div className="w-full lg:h-[470px] px-6 py-6">
                 <img
                   src={person2}
                   className="w-[170px] h-[170px] mx-auto"
                   alt=""
                 />
-                <p className="text-center text-[15px] text-[#999] font-serif mt-16 w-full lg:w-[800px] mx-auto">
+                <h5 className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9  font-serif">
+                Myna Insights
+                </h5>
+                <p className="text-center  text-[10px] md:text-[15px]     text-[#999] font-serif mt-8 w-full lg:w-[800px] mx-auto">
+                  “NuStartz has been an exceptional partner in digital
+                  marketing. Their strategies and dedication have significantly
+                  boosted our digital presence. We highly recommend NuStartz for
+                  anyone seeking impactful digital marketing solutions.”
+                </p>
+                <h5 className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9 my-6 font-serif">
+                 Melvin
+                </h5>
+                <div className="flex justify-center gap-2">
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                  <img src={star} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+
+            {/* third */}
+            <SwiperSlide>
+              <div className="w-full h-[470px] px-6 py-6">
+                <img
+                  src={person3}
+                  className=" mx-auto"
+                  alt=""
+                />
+                 <h5 className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9  font-serif">
+                 Yottaasys 
+                </h5>
+                <p className="text-center  text-[10px] md:text-[15px]     text-[#999] font-serif mt-8 w-full lg:w-[800px] mx-auto">
                   “Working with NuStartz was a game-changer for our e-commerce
                   business. Their digital marketing strategies drove significant
                   growth in our online sales. I highly recommend NuStartz to
                   anyone in the e-commerce world.”
                 </p>
-                <h5 className="text-center text-[#333] text-2xl font-bold leading-9 my-6 font-serif">
+                <h5  className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9 my-6 font-serif">
                   Viktor
                 </h5>
                 <div className="flex justify-center gap-2">
@@ -113,20 +126,25 @@ const Testimonial = () => {
                 </div>
               </div>
             </SwiperSlide>
+
+            {/* // fourth */}
             <SwiperSlide>
               <div className="w-full h-[470px] px-6 py-6">
                 <img
                   src={person4}
-                  className="w-[170px] h-[170px] mx-auto"
+                  className=" mx-auto"
                   alt=""
                 />
-                <p className="text-center text-[15px] text-[#999] font-serif mt-16 w-full lg:w-[800px] mx-auto">
+                 <h5 className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9  font-serif">
+                 IntentX
+                </h5>
+                <p className="text-center  text-[10px] md:text-[15px]     text-[#999] font-serif mt-8 w-full lg:w-[800px] mx-auto">
                   “NuStartz has been a game-changer for my business. Their
                   digital marketing expertise is top-notch, and {`they've`}{" "}
                   significantly improved my online presence. {`I'm`} thrilled
                   with the results.”
                 </p>
-                <h5 className="text-center text-[#333] text-2xl font-bold leading-9 my-6 font-serif">
+                <h5  className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9 my-6 font-serif">
                   Yusuf
                 </h5>
                 <div className="flex justify-center gap-2">
@@ -138,20 +156,25 @@ const Testimonial = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+
+            {/* // fifth */}
+            {/* <SwiperSlide>
               <div className="w-full h-[470px] px-6 py-6">
                 <img
                   src={person5}
                   className="w-[170px] h-[170px] mx-auto"
                   alt=""
                 />
-                <p className="text-center text-[15px] text-[#999] font-serif mt-16 w-full lg:w-[800px] mx-auto">
+                <h5 className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9  font-serif">
+                Myna Insights
+                </h5>
+                <p className="text-center  text-[10px] md:text-[15px]     text-[#999] font-serif mt-8 w-full lg:w-[800px] mx-auto">
                   “NuStartz played a crucial role in enhancing our healthcare{" "}
                   {`practice's`} online presence. Their strategies helped us
                   connect with patients. {`I'm`} grateful for the impact
                   NuStartz has made.”
                 </p>
-                <h5 className="text-center text-[#333] text-2xl font-bold leading-9 my-6 font-serif">
+                <h5 className="text-center text-[#333] text-lg leading-5  lg:leading-9 lg:text-2xl font-bold my-6 font-serif">
                   Greg Stuart
                 </h5>
                 <div className="flex justify-center gap-2">
@@ -162,7 +185,8 @@ const Testimonial = () => {
                   <img src={star} alt="" />
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
+
           </Swiper>
         </div>
       </div>

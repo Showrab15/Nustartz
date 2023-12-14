@@ -18,7 +18,7 @@ const WhyUs = () => {
         </h3>
         <img
           src={q}
-          className="absolute left-[66px] md:left-[130px] lg:left-[180px] -top-[35px] md:top-[35px] lg:-top-20"
+          className="absolute left-[66px] md:left-[130px] lg:left-[180px] -top-[35px] md:-top-[75px] lg:-top-20"
           alt=""
         />
       </div>
@@ -56,7 +56,7 @@ const WhyUs = () => {
             </div>
             <h4 className="mx-auto   text-movedown  text-[16px] md:text-[32px] font-serif font-semibold text-[#275998]">
               Innovation <br/>
-             <span className="relative bottom-4"> at Core</span>
+             <span className="relative lg:bottom-4"> at Core</span>
             </h4>
           </div>
 
@@ -73,7 +73,7 @@ const WhyUs = () => {
               </p>
             </div>
             <h4 className="mx-auto  text-movedown  text-[16px] md:text-[32px]  font-serif font-semibold text-[#275998]">
-              Results-Driven <br /> <span  className="relative bottom-4"> Approach</span>
+              Results-Driven <br /> <span  className="relative lg:bottom-4 md:pb-[10px]  lg:pb-0"> Approach</span>
             </h4>
           </div>
         </div>

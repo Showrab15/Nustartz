@@ -1,4 +1,3 @@
-import Swiper from 'react-id-swiper';
 
 
 import clientLogo1 from "../../assets/Clients Logo/chatfint.png";
@@ -8,6 +7,7 @@ import clientLogo4 from "../../assets/Clients Logo/mamneta.png";
 import clientLogo5 from "../../assets/Clients Logo/mavio.png";
 import clientLogo6 from "../../assets/Clients Logo/yotta.png";
 import wave from '../../assets/Hero Slider.png'
+import Marquee from "react-fast-marquee";
 
 const OurClients = () => {
   return (
@@ -27,40 +27,18 @@ const OurClients = () => {
         className="py-8 grid grid-cols-1 lg:grid-cols-1 mb-8  "
       >
         
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          speed={500}
-          loop={true}
-          showsPagination={false}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-          }}
-          navigation={true}
-          className=" col-span-1 lg:col-span-2"
+        
+        <Marquee speed={40}
+                autoFill= {false}
+
         >
-            <img className="mx-auto cursor-pointer" src={clientLogo1} alt="chatfint.png" />
-            <img className="mx-auto  cursor-pointer" src={clientLogo2} alt="give charity.png" />
-            <img className="mx-auto  cursor-pointer" src={clientLogo3} alt="intenx.png" />
-            <img className="mx-auto  cursor-pointer" src={clientLogo4} alt="mamneta.png" />
-            <img className="mx-auto  cursor-pointer" src={clientLogo5} alt="mavio.png" />
-            <img className="mx-auto  cursor-pointer" src={clientLogo6} alt="yotta.png" />
-        </Swiper>
+        <img  style={{ marginRight: '20px' }} className="mx-auto cursor-pointer" src={clientLogo1} alt="chatfint.png" />
+            <img  style={{ marginRight: '20px' }} className="mx-auto  cursor-pointer" src={clientLogo2} alt="give charity.png" />
+            <img  style={{ marginRight: '20px' }} className="mx-auto  cursor-pointer" src={clientLogo3} alt="intenx.png" />
+            <img  style={{ marginRight: '20px' }} className="mx-auto  cursor-pointer" src={clientLogo4} alt="mamneta.png" />
+            <img  style={{ marginRight: '20px' }} className="mx-auto  cursor-pointer" src={clientLogo5} alt="mavio.png" />
+            <img  style={{ marginRight: '20px' }} className="mx-auto  cursor-pointer" src={clientLogo6} alt="yotta.png" />
+  </Marquee>
       </div>
     </div>
 

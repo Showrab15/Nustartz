@@ -15,9 +15,9 @@ const Footer = () => {
         <footer className="mt-10 font-serif">
         <div className="bgColor  text-black font-serif">
                 <div className=" mx-auto pt-2">
-                    <div className='grid mx-auto ml-[40px] md:ml-[160px] grid-cols-2 gap-[65px] md:grid-cols-4 md:gap-2 mt-4 '>
-                        <div>
-                            <img className="md:w-52 w-32 md:ml-0 -ml-[15px] mb-5" src='https://i.ibb.co/1XYk81B/Steve-logo-copy-2-1.png' alt="" />
+                    <div className='grid mx-auto ml-[40px] mdLml-0 grid-cols-2 gap-[65px] md:grid-cols-4 md:gap-2 mt-4 '>
+                        <div className="md:ml-8">
+                            <img className="md:w-52 w-32 md:-ml-4 -ml-[15px] mb-5" src='https://i.ibb.co/1XYk81B/Steve-logo-copy-2-1.png' alt="" />
                             <p className='mb-1'>Website : www.nustartz.com</p>
                             <p className='mb-1'>Email : contact@NuStartz.com</p>
                             <p className=''>Mobile : +1 732 983 1325</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </div>
 
                         {/* useful links */}
-                        <div className="mt-4">
+                        <div className="mt-4 lg:ml-20">
                             <h1 className=" text-lg md:text-2xl font-bold mb-5">Our Links</h1>
                             <ul className=''>
                                 <li className='mb-2'>
@@ -49,7 +49,7 @@ const Footer = () => {
                         </div>
 
                         {/* company */}
-                        <div className="md:mt-4">
+                        <div className="md:mt-4 lg:ml-10">
                             <h1 className="text-lg md:text-2xl font-bold mb-5">Our Company</h1>
                             {/* <ul className=''>
                                 <li className='mb-2'>
@@ -70,7 +70,7 @@ const Footer = () => {
                         </div>
 
                         {/* support */}
-                        <div className="md:mt-4">
+                        <div className="md:mt-4 lg:ml-20">
                             <h1 className="text-lg md:text-2xl font-bold mb-5">Our Support</h1>
                             {/* <ul className=''>
                                 <li className='mb-2'>
