@@ -31,13 +31,13 @@ const WhyUs = () => {
                 src={chart}
                 alt=""
               />
-              <p className="py-9 text-[16px] font-semibold font-serif">
+              <p className="py-9 text-[14px] font-medium font-serif">
                 As you grow, <br />
                 we adapt. Our solutions <br />
                 scale with your evolving needs.
               </p>
             </div>
-            <h4 className="mx-auto text-movedown  text-[16px] md:text-[32px] font-serif font-semibold text-[#275998]">
+            <h4 className="mx-auto text-movedown  text-[10px] md:text-[26px] font-serif font-semibold text-[#275998]">
               Scalability
             </h4>
           </div>
@@ -48,13 +48,13 @@ const WhyUs = () => {
                 src={light}
                 alt=""
               />
-              <p className="mt-5  text-[16px] font-semibold font-serif">
+              <p className="mt-5  text-[14px] font-medium font-serif">
                 We thrive on innovation,
                 <br /> delivering cutting-edge <br /> solutions that keep your
                 product <br /> ahead of the curve.
               </p>
             </div>
-            <h4 className="mx-auto   text-movedown  text-[16px] md:text-[32px] font-serif font-semibold text-[#275998]">
+            <h4 className="mx-auto   text-movedown  text-[10px] md:text-[26px] font-serif font-semibold text-[#275998]">
               Innovation <br/>
              <span className="relative lg:bottom-4"> at Core</span>
             </h4>
@@ -67,12 +67,12 @@ const WhyUs = () => {
                 src={note}
                 alt=""
               />
-              <p className="py-9 text-[16px] font-semibold font-serif">
+              <p className="py-9 text-[14px] font-medium font-serif">
                 Your success is our priority, <br /> and we measure it by your
                 achievements.
               </p>
             </div>
-            <h4 className="mx-auto  text-movedown  text-[16px] md:text-[32px]  font-serif font-semibold text-[#275998]">
+            <h4 className="mx-auto pb-4 sm:pb-0  text-movedown  text-[10px] md:text-[26px]  font-serif font-semibold text-[#275998]">
               Results-Driven <br /> <span  className="relative lg:bottom-4 md:pb-[10px]  lg:pb-0"> Approach</span>
             </h4>
           </div>

@@ -30,12 +30,12 @@ const Header = () => {
           }}
           className="w-full  h-[450px] md:h-[600px]  2xl:h-[550px]  flex justify-end">
          <div className="font-serif flex flex-col items-center mx-auto my-auto text-white">
-         <h3 className="text-[20px] md:text-[40px] font-bold md:mt-[200px] mt-[100px]">We help you to</h3>
- <p className="text-[15px] md:text-[30px] font-medium  leading-[18px] md:leading-[48px] mb-6">
+         <h3 className="text-[20px] md:text-[35px] font-semibold md:mt-[200px] mt-[100px]">We help you to</h3>
+ <p className="text-[10px] md:text-[20px] font-medium  leading-[10px] md:leading-[28px] mb-6">
               Elevate your {`team's`} capabilities <br className="md:bl"/> with our proficient
               software engineers.
             </p>
-            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[60px] px-10 py-5 text-xl tracking-[0.081em]">
+            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[20px] px-10 py-5 text-xl tracking-[0.081em]">
               Schedule
             </button></Link>
          </div>
@@ -53,13 +53,13 @@ const Header = () => {
           }}
           className="w-full  h-[450px] md:h-[600px]  2xl:h-[550px]  flex justify-end">
          <div className="font-serif flex flex-col items-center mx-auto my-auto text-white ">
-         <h3 className="text-[20px] md:text-[40px] font-bold md:mt-[200px] mt-[100px]">Eliminate</h3>
- <p className="text-[15px] md:text-[30px] font-medium  leading-[18px] md:leading-[48px] mb-6">
- the burden of recruiting and <br /> training
+         <h3 className="text-[20px] md:text-[35px] font-semibold md:mt-[200px] mt-[100px]">Eliminate</h3>
+ <p className="text-[10px] md:text-[20px] font-medium  leading-[10px] md:leading-[28px] mb-6">
+ the burden of recruiting <br />  and training
             </p>
 
           
-<Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[60px] px-10 py-5 text-xl tracking-[0.081em]">
+<Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[20px] px-10 py-5 text-xl tracking-[0.081em]">
               Schedule
             </button></Link>
 
@@ -78,13 +78,13 @@ const Header = () => {
           }}
           className="w-full  h-[450px] md:h-[600px]  2xl:h-[550px]  ">
          <div className="font-serif flex flex-col items-center mx-auto my-auto text-white">
-         <h3 className="text-[20px] md:text-[40px] font-bold  md:mt-[250px]  mt-[200px]">Prepare</h3>
- <p className="text-[15px] md:text-[30px] font-medium  leading-[14px] md:leading-[38px] mb-6">
+         <h3 className="text-[20px] md:text-[35px] font-semibold  md:mt-[250px]  mt-[200px]">Prepare</h3>
+ <p className="text-[10px] md:text-[20px] font-medium  leading-[10px] md:leading-[28px] mb-6">
               Elevate your {`team's`} capabilities <br className="md:block hiiden"/>          for a transformative 
 experience
 
             </p>
-            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[60px] px-10 py-5 text-xl tracking-[0.081em]">
+            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[20px] px-10 py-5 text-xl tracking-[0.081em]">
               Schedule
             </button></Link>
          </div>
@@ -100,12 +100,12 @@ experience
           }}
           className="w-full  h-[450px] md:h-[600px]  2xl:h-[550px]  ">
          <div className="font-serif flex flex-col items-center mx-auto my-auto text-white">
-         <h3 className="text-[20px] md:text-[40px] font-bold  md:mt-[250px] mt-[200px]">Retain</h3>
- <p className="text-[15px] md:text-[30px] font-medium  leading-[14px] md:leading-[38px] mb-6">
+         <h3 className="text-[20px] md:text-[35px] font-semibold  md:mt-[250px] mt-[200px]">Retain</h3>
+ <p className="text-[10px] md:text-[20px] font-medium  leading-[10px] md:leading-[28px] mb-6">
               Elevate your {`team's`} capabilities <br/>              Absolute authority over your <br /> team whenever you desire
 
             </p>
-            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[60px] px-10 py-5 text-xl tracking-[0.081em]">
+            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[20px] px-10 py-5 text-xl tracking-[0.081em]">
               Schedule
             </button></Link>
          </div>

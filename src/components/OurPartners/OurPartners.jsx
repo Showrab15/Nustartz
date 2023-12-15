@@ -18,8 +18,8 @@ const OurPartners = () => {
    className=" mt-8 "
     >
      <div className="bg-[#D4EAF4]" >
-     <h1  className="text-[#000] py-1 text-center text-2xl md:text-5xl font-bold leading-[30px] md:leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0 md:-ml-4">
-         Our Partners
+     <h1  className="text-[#000] py-1 text-center text-2xl md:text-[35px] font-bold leading-[30px] md:leading-[56px] font-serif w-full col-span-1 items-center mb-3 lg:mb-0 md:-ml-4">
+         Our <span className="text-[#3595FC]">Partners</span>
        </h1>
        <img className="-mt-2 w-full lg:block hidden" src={wave} alt="" /> 
 

@@ -1,12 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import Services from '../../components/Services/Services';
 
 const Offerings = () => {
-    return (
-        <div className="text-3xl text-center font-serif mx-auto py-20">
-           Coming Soon.....  
-           <Link className="text-blue-500 text-center px-10 py-10" to="/">Visit Nustratz For more </Link>
-        </div>
-    );
+  return (
+    <>
+      <Helmet>
+        <title>Offerings - NuStartz</title>
+        <meta property="og:title" content="Explore Our Solutions: NuStartz Offerings" />
+        <meta property="og:description" content="Discover a range of tailored solutions and services designed to meet your needs. Dive into our offerings that empower and innovate, crafted to elevate your experience with NuStartz" />
+        <meta property="og:image" content="../../../src/assets/Offerings/OfferingsBanner.png" />
+        <meta property="og:url" content="https://www.nustartz.com/offerings" />
+      </Helmet> 
+      <Services/>
+    </>
+  );
 };
 
 export default Offerings;

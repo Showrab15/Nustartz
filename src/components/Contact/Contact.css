@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .addBanner {
+        height: 350px;
+        background-image: url('../../assets/globe-earth-world-map-abstract-dotted-vector-22411303.png');
+        opacity: 0.5;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .addBanner {
+        height: 500px;
+        background-image: url('../../assets/globe-earth-world-map-abstract-dotted-vector-22411303.png');
+    }
+}

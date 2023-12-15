@@ -11,6 +11,8 @@ import Home from './Pages/Home/Home';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import Offerings from './Pages/Offerings/Offerings';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
+import Contact from './Pages/ContactUs/ContactUs';
+import MainHome from './Pages/MainHome/MainHome';
 
 
 const router = createBrowserRouter([
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
     children:[
       {
         path : '/',
+        element: <MainHome/>
+      },
+      {
+        path : '/home',
         element: <Home/>
       },
       {
@@ -30,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/offerings',
         element: <Offerings/>
+      },
+      {
+        path: '/contact-us',
+        element: <Contact/>
       }
     ]
   },

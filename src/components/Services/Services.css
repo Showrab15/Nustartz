@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+  box-sizing: border-box;
+}
+/* 
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('../../assets/offerManual1.png');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+
+.cart:hover .card__img--hover {
+  height: 100%;
+  background-image: url('../../assets/Group 9172.png');
+  background-size: cover;
+}
+ */
+
+
+
+/* ----------------- */
+/* For Card 2 */
+.card--1 .card__img,
+.card--1 .card__img--hover {
+  background-image: url('../../assets/offerManual1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hover effect for Card 1 */
+.cart:hover .card__img--hover.card__img--hover-1 {
+  background-image: url('../../assets/Group 9172.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* For Card 2 */
+.card--2 .card__img,
+.card--2 .card__img--hover {
+  background-image: url('../../assets/digital-marketing-branding-loyalty-graphics 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Hover effect for Card 2 */
+.cart:hover .card__img--hover.card__img--hover-2 {
+  background-image: url('../../assets/Group 9173 (1).png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* For Card 3 */
+.card--3 .card__img,
+.card--3 .card__img--hover {
+  background-image: url('../../assets/thirdofferingmanual.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Hover effect for Card 3 */
+.cart:hover .card__img--hover.card__img--hover-3 {
+  background-image: url('../../assets/thirfimagehovering.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* For Card 4 */
+.card--4 .card__img,
+.card--4 .card__img--hover {
+  background-image: url('../../assets/fourthofferingmnual.png');
+}
+
+
+/* Hover effect for Card 4 */
+.cart:hover .card__img--hover.card__img--hover-4 {
+  background-image: url('../../assets/fourthimagehover.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* For Card 5 */
+.card--5 .card__img,
+.card--5 .card__img--hover {
+  background-image: url('../../assets/fifthimagemanual.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Hover effect for Card 5 */
+.cart:hover .card__img--hover.card__img--hover-5 {
+  background-image: url('../../assets/fifthimagehover.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------------------------------------------------*/
+/* second category */
+
+
+/* For Card 6 */
+.card--6 .card__img,
+.card--6 .card__img--hover {
+  background-image: url('../../assets/offeringsmanual6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Hover effect for Card 6 */
+.cart:hover .card__img--hover.card__img--hover-6 {
+  background-image: url('../../assets/offeringshover6.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* For Card 7 */
+.card--7 .card__img,
+.card--7 .card__img--hover {
+  background-image: url('../../assets/offeringsmanual7.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Hover effect for Card 7 */
+.cart:hover .card__img--hover.card__img--hover-7 {
+  background-image: url('../../assets/offeringshover7.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* For Card 8 */
+.card--8 .card__img,
+.card--8 .card__img--hover {
+  background-image: url('../../assets/offeringsmanual8.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Hover effect for Card 8 */
+.cart:hover .card__img--hover.card__img--hover-8 {
+  background-image: url('../../assets/offeringshover8.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* For Card 9 */
+.card--9 .card__img,
+.card--9 .card__img--hover {
+  background-image: url('../../assets/offeringsmanual9.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Hover effect for Card 9 */
+.cart:hover .card__img--hover.card__img--hover-9 {
+  background-image: url('../../assets/offeringshover9.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* For Card 10 */
+.card--10 .card__img,
+.card--10 .card__img--hover {
+  background-image: url('../../assets/offeringsmanual10.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Hover effect for Card 10 */
+.cart:hover .card__img--hover.card__img--hover-10 {
+  background-image: url('../../assets/offeringshover10.png');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.cart {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    /* width: 33.3%; */
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.cart:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+
+.cart:hover .card__info {
+    background-color: transparent;
+    position: relative;
+    color: white;
+}
+.cart:hover .card__info .hover-white{
+  color: white;
+  
+}
+.cart:hover .card__info-hover {
+    /* opacity: 1; */
+    opacity : 1;
+}
+
+
+/* 
+.cart:hover .card__img  {
+    height: 120px;
+   
+} */

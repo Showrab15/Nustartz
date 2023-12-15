@@ -14,17 +14,17 @@ const Navbar1 = () => {
   };
 
   return (
-    <div className="fixed top-0 z-50 w-full bg-white shadow-md">
+    <div className="fixed top-0 z-50 w-full bg-white shadow-md rounded-2xl">
 
 <div className="flex flex-row justify-between px-4 lg:px-12 py-5 relative w-full max-w-[1322px] mx-auto">
       <Link to="/">
         <img src={logo} className="w-28 h-10 lg:w-[201px] lg:h-[55px]" alt="" />
       </Link>
-      <ul className="font-serif hidden lg:flex items-center justify-center space-x-9 text-xl text-[#3595FC] font-medium  ">
+      <ul className="font-serif hidden lg:flex items-center justify-center space-x-9 text-lg text-[#3595FC] font-medium  ">
         <li>
           <NavLink className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "underline font-bold" : ""
-  } to="/" aria-label="Home" title="Home"
+  } to="/home" aria-label="Home" title="Home"
   
   >
             Home
@@ -37,7 +37,8 @@ const Navbar1 = () => {
             title="offerings"
             className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "underline font-bold" : ""
-          }          >
+          }  
+          >
             Offerings
           </NavLink>
         </li>
@@ -52,9 +53,12 @@ const Navbar1 = () => {
           </NavLink>
         </li>
       </ul>
-      <button className="bg-[#275998] hidden border-none p-4 rounded-xl lg:block  text-white text-base">
+    <Link to="/contact-us">
+    <button className="bg-[#275998] hidden border-none p-4 rounded-xl lg:block  text-white text-base">
         Contact →{" "}
       </button>
+    </Link>
+
 
       {/*----------------------- Mobile Menu -------------------------*/}
       <div className="lg:hidden">
@@ -97,7 +101,7 @@ const Navbar1 = () => {
           <ul className="flex flex-col gap-4 text-center font-medium font-serif leading-6 text-[15px] text-white">
             <li>
               <NavLink
-                to="/"
+                to="/home"
                 aria-label="Home"
                 title="Home"
                 className={({ isActive, isPending }) =>
@@ -116,7 +120,8 @@ const Navbar1 = () => {
                 title="offerings"
                 className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "underline font-bold" : " "
-              }                 onClick={closeMenu} // Close menu when clicked
+              }     
+              onClick={closeMenu} // Close menu when clicked
 
               >
                 Offerings
@@ -136,9 +141,11 @@ const Navbar1 = () => {
               </NavLink>
             </li>
           </ul>
-          <button className="bg-[#275998] border-none p-4 rounded-md text-white text-sm font-bold font-Montserrat leading-[22px] mt-4">
+         <Link to="/contact-us">
+         <button className="bg-[#275998] border-none p-4 rounded-md text-white text-sm font-bold font-Montserrat leading-[22px] mt-4">
             CONTACT <span className="ml-[15px]">→</span>
           </button>
+         </Link>
         </div>
       </div>
     </div>
