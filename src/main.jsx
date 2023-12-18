@@ -46,6 +46,7 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
  <div className="overflow-x-hidden">
+  
  <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,

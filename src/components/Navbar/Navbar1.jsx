@@ -14,16 +14,16 @@ const Navbar1 = () => {
   };
 
   return (
-    <div className="fixed top-0 z-50 w-full bg-white shadow-md rounded-2xl">
+    <div className="fixed top-0 z-50 w-full bg-white shadow-md rounded-2xl font-serif">
 
 <div className="flex flex-row justify-between px-4 lg:px-12 py-5 relative w-full max-w-[1322px] mx-auto">
       <Link to="/">
         <img src={logo} className="w-28 h-10 lg:w-[201px] lg:h-[55px]" alt="" />
       </Link>
-      <ul className="font-serif hidden lg:flex items-center justify-center space-x-9 text-lg text-[#3595FC] font-medium  ">
+      <ul className="font-serif hidden md:flex items-center justify-center space-x-9 text-lg text-[#3595FC] font-medium  ">
         <li>
           <NavLink className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "underline font-bold" : ""
+    isPending ? "pending" : isActive ? " font-semibold" : ""
   } to="/home" aria-label="Home" title="Home"
   
   >
@@ -36,7 +36,7 @@ const Navbar1 = () => {
             aria-label="offerings"
             title="offerings"
             className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline font-bold" : ""
+            isPending ? "pending" : isActive ? " font-semibold" : ""
           }  
           >
             Offerings
@@ -47,21 +47,21 @@ const Navbar1 = () => {
           aria-label="about" 
           title="about" 
           className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "underline font-bold" : ""
+          isPending ? "pending" : isActive ? " font-semibold" : ""
   }>
             About Us
           </NavLink>
         </li>
       </ul>
     <Link to="/contact-us">
-    <button className="bg-[#275998] hidden border-none p-4 rounded-xl lg:block  text-white text-base">
+    <button className="bg-[#275998] hidden border-none p-4 rounded-xl md:block  text-white text-base">
         Contact →{" "}
       </button>
     </Link>
 
 
       {/*----------------------- Mobile Menu -------------------------*/}
-      <div className="lg:hidden">
+      <div className="md:hidden">
         {/* Mobile Menu Toggle Button */}
         <button id="menuButton" onClick={handleMenuToggle}>
           {menuOpen ? (
@@ -105,7 +105,7 @@ const Navbar1 = () => {
                 aria-label="Home"
                 title="Home"
                 className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "underline font-bold" : " "
+    isPending ? "pending" : isActive ? " font-semibold" : " "
   } 
   onClick={closeMenu} // Close menu when clicked
 
@@ -119,7 +119,7 @@ const Navbar1 = () => {
                 aria-label="offerings"
                 title="offerings"
                 className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "underline font-bold" : " "
+                isPending ? "pending" : isActive ? " font-semibold" : " "
               }     
               onClick={closeMenu} // Close menu when clicked
 
@@ -133,7 +133,7 @@ const Navbar1 = () => {
                 aria-label="about"
                 title="about"
                 className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "underline font-bold" : " "
+                isPending ? "pending" : isActive ? " font-semibold" : " "
               }                 onClick={closeMenu} // Close menu when clicked
 
               >
@@ -142,7 +142,7 @@ const Navbar1 = () => {
             </li>
           </ul>
          <Link to="/contact-us">
-         <button className="bg-[#275998] border-none p-4 rounded-md text-white text-sm font-bold font-Montserrat leading-[22px] mt-4">
+         <button className="bg-[#275998] border-none p-4 rounded-md text-white text-sm font-semibold font-Montserrat leading-[22px] mt-4">
             CONTACT <span className="ml-[15px]">→</span>
           </button>
          </Link>

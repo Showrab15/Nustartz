@@ -25,7 +25,7 @@ const OurClients = () => {
       </div>
       <div
 
-        className="py-8 grid grid-cols-1 lg:grid-cols-1 mb-8  "
+        className="py-2 grid grid-cols-1 lg:grid-cols-1  "
       >
         
         

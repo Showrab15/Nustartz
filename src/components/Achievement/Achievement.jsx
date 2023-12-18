@@ -1,5 +1,5 @@
 import CountUp, { useCountUp } from "react-countup";
-import wave from '../../assets/Hero Slider.png'
+// import wave from '../../assets/Hero Slider.png'
 
 const Achievement = () => {
   useCountUp({
@@ -10,7 +10,7 @@ const Achievement = () => {
   });
   return (
     <div className="mx-auto">
-     <div className="px-4 md:px-8 lg:px-12 mt-14 py-4 mx-auto">
+     <div className="px-4 md:px-8 lg:px-12 mt-4 py-4 mx-auto">
       <h1 className="text-[#050038] text-center font-bold text-3xl md:text-[35px] leading-10 tracking-wider font-sans mb-[45px]">
       <span className="text-[#3595FC]">Achievement</span> of NuStartz
       </h1>
@@ -124,7 +124,7 @@ const Achievement = () => {
         </div>
       </div>
     </div>
-    <img className="mt-4 w-full" src={wave} alt="" />
+    {/* <img className="mt-4 w-full" src={wave} alt="" /> */}
 
     </div>
    

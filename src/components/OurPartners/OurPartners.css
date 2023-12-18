@@ -1,0 +1,35 @@
+/* Add this CSS to your stylesheet or component */
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee-content {
+    display: flex;
+    position: absolute;
+    animation: marquee 60s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .marquee-mask {
+    position: absolute;
+    width: 60px; /* Adjust the width of the fade */
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to right, transparent, white);
+  }
+  
+  .marquee-mask.right {
+    right: 0;
+    left: auto;
+    background: linear-gradient(to left, transparent, white);
+  }
+  

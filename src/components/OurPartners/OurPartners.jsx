@@ -8,7 +8,7 @@ import partnerLogo7 from '../../assets/Partners Logo/PRivitar.png'
 import partnerLogo8 from '../../assets/Partners Logo/informatica.png'
 import partnerLogo9 from '../../assets/Partners Logo/preciesley work.png'
 import Marquee from "react-fast-marquee";
-
+import "./OurPartners.css"
 import wave from '../../assets/Hero Slider.png'
 
 const OurPartners = () => {
@@ -26,52 +26,19 @@ const OurPartners = () => {
      </div>
      <div
 
-       className="py-8 grid grid-cols-1 lg:grid-cols-1 mb-8  "
+       className="py-8 grid grid-cols-1 lg:grid-cols-1 mb-8 w-full  mx-auto rounded-xl "
      >
       
-        {/* <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          speed={500}
-          loop={true}
-          showsPagination={false}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-          }}
-          navigation={true}
-          className=" col-span-1 lg:col-span-2 mx-auto"
-        >
-            <img className="mx-auto cursor-pointer" src={partnerLogo1} alt="chatfint.png" />
-            <img className="mx-auto cursor-pointer" src={partnerLogo2} alt="give charity.png" />
-            <img className="mx-auto cursor-pointer" src={partnerLogo3} alt="intenx.png" />
-            <img className="mx-auto cursor-pointer" src={partnerLogo4} alt="mamneta.png" />
-            <img className="mx-auto cursor-pointer" src={partnerLogo5} alt="mavio.png" />
-            <img className="mx-auto cursor-pointer" src={partnerLogo6} alt="yotta.png" />
-            <img className="mx-auto cursor-pointer" src={partnerLogo7} alt="yotta.png" />
-            <img className="mx-auto cursor-pointer" src={partnerLogo8} alt="yotta.png" />
-            <img className="mx-auto cursor-pointer" src={partnerLogo9} alt="yotta.png" />
-        </Swiper> */}
+       
 
         <Marquee speed={40}
         autoFill= {false}
+        className="marquee-container"
         >
+            <div className="marquee-mask"></div>
+
         <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer" src={partnerLogo1} alt="chatfint.png"  />
-            <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer" src={partnerLogo2} alt="give charity.png" />
+            <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer " src={partnerLogo2} alt="give charity.png" />
             <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer" src={partnerLogo3} alt="intenx.png" />
             <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer" src={partnerLogo4} alt="mamneta.png" />
             <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer" src={partnerLogo5} alt="mavio.png" />
@@ -79,6 +46,8 @@ const OurPartners = () => {
             <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer" src={partnerLogo7} alt="yotta.png" />
             <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer" src={partnerLogo8} alt="yotta.png" />
             <img  style={{ marginRight: '20px' }}  className="mx-auto cursor-pointer" src={partnerLogo9} alt="yotta.png" />
+            <div className="marquee-mask right"></div>
+
   </Marquee>
         </div>
     </div>

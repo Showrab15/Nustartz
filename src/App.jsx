@@ -48,6 +48,7 @@ import Footer from './components/Footer/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import CookieConsent from "./components/CookieConsent/CookieConsent";
 import { useState } from "react";
+import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
 
 function App() {
   const location = useLocation();
@@ -81,6 +82,7 @@ function App() {
       )}
        
       </div>
+      <BackToTopButton />
 
       <Outlet />
 

@@ -5,7 +5,7 @@ import chart from "../../assets/hi.png";
 import light from "../../assets/light.png";
 import note from "../../assets/note.png";
 import q from "../../assets/q.png";
-import wave from '../../assets/Hero Slider.png'
+// import wave from '../../assets/Hero Slider.png'
 
 const WhyUs = () => {
   return (
@@ -63,11 +63,11 @@ const WhyUs = () => {
           <div  className="chart-container">
             <div className=" p-5 w-[290px] mt-8 rounded-[35px] cursor-pointer bg-[#3595FC] chart-image">
               <img
-                className="w-[94px] h-[94px] flex mx-auto justify-center mr-[70px]"
+                className="w-[94px] h-[88px] flex mx-auto right-[70px] "
                 src={note}
                 alt=""
               />
-              <p className="py-9 text-[14px] font-medium font-serif">
+              <p className="py-6 text-[14px] font-medium font-serif">
                 Your success is our priority, <br /> and we measure it by your
                 achievements.
               </p>
@@ -81,7 +81,7 @@ const WhyUs = () => {
     </div>
 
     
-    <img className="-mt-2 w-full" src={wave} alt="" />
+    {/* <img className="-mt-2 w-full" src={wave} alt="" /> */}
 
     </>
   );

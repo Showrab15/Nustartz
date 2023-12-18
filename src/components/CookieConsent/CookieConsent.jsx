@@ -20,10 +20,10 @@ const CookieConsent = ({ onAccept, onCancel }) => {
 </span>
         <p className="md:text-[15px] text-[10px] text-[#275998] font-medium text-center">This website uses <Link className="text-[#3595FC]">Cookies</Link> to enhance the user experience.</p>
         <div className="flex justify-center gap-2 pt-2">
-          <button className="text-white rounded-md cursor-pointer p-2 text-[8px] md:text-[14px] bg-green-500" onClick={handleAccept}>
+          <button className="text-white rounded-md cursor-pointer p-2 text-[8px] md:text-[14px] bg-[#3595FC]" onClick={handleAccept}>
             Accept 
           </button>
-          <button className="text-white rounded-md cursor-pointer p-2 text-[8px] md:text-[14px] bg-red-600" onClick={handleCancel}>
+          <button className="text-white rounded-md cursor-pointer p-2 text-[8px] md:text-[14px] bg-[#3595FC]" onClick={handleCancel}>
             Cancel
           </button>
         </div>

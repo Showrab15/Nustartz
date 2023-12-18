@@ -7,22 +7,30 @@ import Achievement from "../../components/Achievement/Achievement";
 import { Helmet } from "react-helmet";
 function Home() {
   return (
-    <div className="max-w-6xl mx-auto" >
+    < >
       <Helmet>
-        <title>Home - NuStartz</title>
+        <title>Home || Welcome to NuStartz - Where Innovation Begins</title>
         <meta property="og:title" content="Welcome to NuStartz - Where Innovation Begins" />
         <meta property="og:description" content="Experience a world of innovation and possibilities with NuStartz. Explore our diverse offerings, discover our story, and embark on a journey towards transformative solutions" />
         <meta property="og:image" content="../../../public/logo.svg" />
         <meta property="og:url" content="https://www.nustartz.com/home" />
       </Helmet>
+      <div  className="max-w-6xl mx-auto">
+
       <WhyUs />
+
+      </div>
       <OurPartners/>
       <OurClients/>
+      <div  className="max-w-6xl mx-auto">
+
       <Achievement/>
       
       <Testimonial />
+</div>
+    
       <Analytics/>
-    </div>
+    </>
   );
 }
 
