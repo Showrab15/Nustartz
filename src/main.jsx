@@ -13,44 +13,49 @@ import Offerings from './Pages/Offerings/Offerings';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import Contact from './Pages/ContactUs/ContactUs';
 import MainHome from './Pages/MainHome/MainHome';
+import { HelmetProvider } from "react-helmet-async";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    errorElement: <ErrorPage/>,
-    children:[
+    errorElement: <ErrorPage />,
+    children: [
       {
-        path : '/',
-        element: <MainHome/>
+        path: '/',
+        element: <MainHome />
       },
       {
-        path : '/home',
-        element: <Home/>
+        path: '/home',
+        element: <Home />
       },
       {
         path: '/about-Us',
-        element: <AboutUs/>
+        element: <AboutUs />
       },
       {
         path: '/offerings',
-        element: <Offerings/>
+        element: <Offerings />
       },
       {
         path: '/contact-us',
-        element: <Contact/>
+        element: <Contact />
       }
     ]
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
- <div className="overflow-x-hidden">
-  
- <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+  <div className="overflow-x-hidden">
 
-  <Analytics/>
-   </div>
+    <React.StrictMode>
+    <HelmetProvider>
+
+      <RouterProvider router={router} />
+      </HelmetProvider>
+
+    </React.StrictMode>,
+
+    <Analytics />
+  </div>
 )

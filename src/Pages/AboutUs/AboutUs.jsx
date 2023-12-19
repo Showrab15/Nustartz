@@ -3,6 +3,14 @@ import { Helmet } from 'react-helmet';
 import OurTeam from '../../components/OurTeam/OurTeam';
 
 const AboutUs = () => {
+
+
+    if (window.pageYOffset > 0) {
+        window.scrollTo(0, 0);
+      }
+
+
+      
     return (
         <div>
   <Helmet>

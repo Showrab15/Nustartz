@@ -9,14 +9,12 @@ const Achievement = () => {
     scrollSpyDelay: 1000,
   });
   return (
-    <div className="mx-auto">
+    <div className="mx-auto font-serif ">
      <div className="px-4 md:px-8 lg:px-12 mt-4 py-4 mx-auto">
-      <h1 className="text-[#050038] text-center font-bold text-3xl md:text-[35px] leading-10 tracking-wider font-sans mb-[45px]">
+      <h1 className="text-[#050038] text-center font-bold text-3xl md:text-[35px] leading-10 tracking-wider  mb-[45px]">
       <span className="text-[#3595FC]">Achievement</span> of NuStartz
       </h1>
-      <p className="text-[#050038] text-center text-[15px] font-sans leading-6 mb-10 underline">
-        Contact Sales to request a demo
-      </p>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto lg:ml-[20px] 2xl:ml-[60px] 2xl:mt-4">
         <div className="w-full md:w-[360px] text-center">
           <svg
@@ -32,7 +30,7 @@ const Achievement = () => {
               fill="#050038"
             />
           </svg>
-          <p className="text-[#050038] text-center text-[14px] font-sans leading-6">
+          <p className="text-[#050038] text-center text-[14px] font-serif leading-6">
             ISO-27001 enterprise-grade security compliant
           </p>
         </div>
@@ -50,7 +48,7 @@ const Achievement = () => {
               fill="#050038"
             />
           </svg>
-          <p className="text-[#050038] text-center text-[15px] font-sans leading-6">
+          <p className="text-[#050038] text-center text-[15px] font-serif leading-6">
             Visual Collaboration Platform on G2
           </p>
         </div>
@@ -67,7 +65,7 @@ const Achievement = () => {
               </div>
             )}
           </CountUp>
-          <p className="text-[#050038] text-center text-[15px] font-sans leading-6">
+          <p className="text-[#050038] text-center text-[15px] font-serif leading-6">
             of the Fortune 100 are customers
           </p>
         </div>
@@ -84,7 +82,7 @@ const Achievement = () => {
               </div>
             )}
           </CountUp>
-          <p className="text-[#050038] text-center text-lg font-sans leading-6">
+          <p className="text-[#050038] text-center text-lg font-serif leading-6">
             community- and expert-built templates
           </p>
         </div>
@@ -101,7 +99,7 @@ const Achievement = () => {
               </div>
             )}
           </CountUp>
-          <p className="text-[#050038] text-center text-lg font-sans leading-6">
+          <p className="text-[#050038] text-center text-lg font-serif leading-6">
             users around the world
           </p>
         </div>
@@ -118,7 +116,7 @@ const Achievement = () => {
               </div>
             )}
           </CountUp>
-          <p className="text-[#050038] text-center text-lg font-sans leading-6">
+          <p className="text-[#050038] text-center text-lg font-serif leading-6">
             integrations with technology partners
           </p>
         </div>

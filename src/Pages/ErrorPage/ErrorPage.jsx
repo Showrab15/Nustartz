@@ -3,7 +3,6 @@ import './errorpage.css'
 const ErrorPage = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-4 font-serif min-h-screen my-auto">
-      {/* <h1 className="text-6xl text-center font-extrabold">404 - Not Found</h1> */}
      
       {/* You can add more content or links here */}
       <div  className="error">

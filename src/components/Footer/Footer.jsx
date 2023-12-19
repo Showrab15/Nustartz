@@ -1,19 +1,13 @@
-
-
 import { Link } from 'react-router-dom';
 import './Footer.css'
 import SocialFooterIcons from './SocialFooterIcons';
 const Footer = () => {
 
-//     const location = useLocation();
-//   const isAboutUsPage = location.pathname === '/about-Us';
-  
-//   // Define the classes for the footer based on the route
-//   const footerClasses = isAboutUsPage ? 'mt-20' : '';
-  
+
+
     return (
         <footer className="mt-10 font-serif">
-        <div className="bgColor  text-black font-serif">
+            <div className="bgColor  text-black font-serif">
                 <div className=" mx-auto pt-2">
                     <div className='grid mx-auto ml-[40px] mdLml-0 grid-cols-2 gap-[65px] md:grid-cols-4 md:gap-2 mt-4 '>
                         <div className="md:ml-8 text-sm">
@@ -31,16 +25,13 @@ const Footer = () => {
                             <h1 className=" text-base md:text-lg font-semibold mb-5">Our Links</h1>
                             <ul className='text-sm'>
                                 <li className='mb-2'>
-                                    {/* <Link target='blank' to="/">Home</Link> */}
                                     <Link to="/" target="_blank" rel="noopener noreferrer">Home</Link>
                                 </li>
                                 <li className='mb-2'>
-                                    {/* <Link target='blank' to="/about-details">About Us</Link> */}
                                     <Link to="/about-Us" target="_blank" rel="noopener noreferrer">About Us</Link>
                                 </li>
                                 <li className='mb-2'>
                                     <Link to='/offerings' >Offerings</Link>
-                                    {/* <a href="/offerings" target="_blank" rel="noopener noreferrer">Offerings</a> */}
                                 </li>
                                 <li>
                                     <Link to='/'>Contact</Link>
@@ -51,14 +42,7 @@ const Footer = () => {
                         {/* company */}
                         <div className="md:mt-4 lg:ml-10">
                             <h1 className="text-base md:text-lg font-semibold mb-5">Our Company</h1>
-                            {/* <ul className=''>
-                                <li className='mb-2'>
-                                    <Link target='blank' to="/careers">About Company</Link>
-                                </li>
-                                <li className='mb-2'>
-                                    <Link target='blank' to="/">Our Testimonial</Link>
-                                </li>
-                            </ul> */}
+
                             <ul className='text-sm'>
                                 <li className='mb-2'>
                                     <a href="/" target="_blank" rel="noopener noreferrer">About Company</a>
@@ -72,14 +56,7 @@ const Footer = () => {
                         {/* support */}
                         <div className="md:mt-4 lg:ml-20">
                             <h1 className="text-base md:text-lg font-semibold mb-5">Our Support</h1>
-                            {/* <ul className=''>
-                                <li className='mb-2'>
-                                    <Link target='blank' to="/nexus-customer-service-portal">Customer Support Portal</Link>
-                                </li>
-                                <li className='mb-2'>
-                                    <Link target='blank' to="/">FAQ</Link>
-                                </li>
-                            </ul> */}
+
                             <ul className='text-sm'>
                                 <li className='mb-2'>
                                     <a href="/" target="_blank" rel="noopener noreferrer">Customer Support</a>

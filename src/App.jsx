@@ -23,7 +23,7 @@
 //   return (
 //     <div>
 //       <div
-        
+
 //         className="w-full   "
 //       >
 //         <Navbar1 />
@@ -41,7 +41,7 @@
 
 // export default App;
 
- import Header from "./components/Header/Header";
+import Header from "./components/Header/Header";
 import { Outlet, useLocation } from 'react-router-dom';
 import Navbar1 from './components/Navbar/Navbar1';
 import Footer from './components/Footer/Footer';
@@ -77,10 +77,10 @@ function App() {
         {/* Conditionally render Header */}
         {!isAboutUsPage && !isOfferingsPage && !isContactUsPage && <Header />}
 
-         {showConsent && (
-        <CookieConsent onAccept={handleAccept} onCancel={handleCancel} />
-      )}
-       
+        {showConsent && (
+          <CookieConsent onAccept={handleAccept} onCancel={handleCancel} />
+        )}
+
       </div>
       <BackToTopButton />
 

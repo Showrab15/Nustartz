@@ -1,11 +1,16 @@
 import Testimonial from "../../components/Testimonial/Testimonial";
 import WhyUs from "../../components/WhyUs/WhyUs";
-import {Analytics} from '@vercel/analytics/react'
+import { Analytics } from '@vercel/analytics/react'
 import OurClients from "../../components/OurClients/OurClients";
 import OurPartners from "../../components/OurPartners/OurPartners";
 import Achievement from "../../components/Achievement/Achievement";
 import { Helmet } from "react-helmet";
 function Home() {
+
+
+  if (window.pageYOffset > 0) {
+    window.scrollTo(0, 0);
+  }
   return (
     < >
       <Helmet>
@@ -15,21 +20,21 @@ function Home() {
         <meta property="og:image" content="../../../public/logo.svg" />
         <meta property="og:url" content="https://www.nustartz.com/home" />
       </Helmet>
-      <div  className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto">
 
-      <WhyUs />
+        <WhyUs />
 
       </div>
-      <OurPartners/>
-      <OurClients/>
-      <div  className="max-w-6xl mx-auto">
+      <OurPartners />
+      <OurClients />
+      <div className="max-w-6xl mx-auto">
 
-      <Achievement/>
-      
-      <Testimonial />
-</div>
-    
-      <Analytics/>
+        <Achievement />
+
+        <Testimonial />
+      </div>
+
+      <Analytics />
     </>
   );
 }

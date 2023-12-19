@@ -1,4 +1,3 @@
-
 import Siva from "../../assets/Our teams/Siva circle.png";
 import Dinesh from "../../assets/Our teams/Dinesh circle.png";
 import Steve from "../../assets/Our teams/steve circle.png";
@@ -24,7 +23,7 @@ const OurTeam = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="w-full 2xl:h-[700px] lg:h-[534px]  h-[400px] md:h-[350px] mx-auto flex justify-center items-center"
+        className="w-full 2xl:h-[500px] lg:h-[534px]  h-[400px] md:h-[350px] mx-auto flex justify-center items-center"
       >
         <h3 className="text-[#275998] text-lg lg:text-[35px] md:leading-[28px] lg:leading-normal font-bold text-center px-2 md:px-0">
           Empowering startups with innovation and expertise{" "}
@@ -62,7 +61,7 @@ const OurTeam = () => {
 
               <div className="flex flex-col text-center lg:-mt-[140px] -mt-[88px] md:-mt-[175px] items-center justify-center">
                 <h3 className=" md:text-[25px] text-[18px] font-bold mt-3">
-                  Siva Periyasamy
+                  Siva Periasamy
                 </h3>
                 <h4 className="text-[12px] md:text-[20px] font-medium ">
                   Founder/President
@@ -128,7 +127,7 @@ const OurTeam = () => {
             <div className="bg-[#275998] rounded-xl text-white  mx-auto w-full justify-center  flex flex-col items-center  xl:ml-0  lg:ml-12 mt-32 md:mt-[210px]">
               <div>
                 <img
-                  className="lg:w-[402px] lg:h-[504.4px] mx-auto -mt-[215px] md:-mt-[290px] lg:-mt-[250px]"
+                  className="lg:w-[382px] lg:h-[450.4px] mx-auto -mt-[215px] md:-mt-[290px] lg:-mt-[220px]"
                   src={Dinesh}
                   alt=""
                 />
@@ -136,7 +135,7 @@ const OurTeam = () => {
 
               <div className="flex flex-col text-center lg:-mt-[140px] -mt-32 md:-mt-[175px] items-center justify-center">
                 <h3 className="md:text-[25px] text-[18px] font-bold mt-6">
-                  Dinesh
+                  Dinesh Krishnan
                 </h3>
                 <h4 className="text-[12px] md:text-[20px] font-medium ">
                   Chief Technology Officer
@@ -175,7 +174,7 @@ const OurTeam = () => {
                 />
                 <div className="w-full lg:[493px">
                   <h3 className="text-[#000] md:text-[25px] text-[18px] font-bold font-serif text-center mb-2">
-                    Pushkar
+                    Pushkar Sahai
                   </h3>
                   <h5 className="text-[#000] md:text-[20px] text-[13px] font-medium font-serif text-center  mb-1">
                     Strategic Advisor <br /> Ex-Google, Ex-Microsoft
@@ -229,7 +228,7 @@ const OurTeam = () => {
                 />
                 <div className="w-full lg:[493px">
                   <h3 className="text-[#000] md:text-[25px] text-[18px] font-bold font-serif text-center mb-2">
-                    Mohan
+                    Mohan Kumar
                   </h3>
                   <h5 className="text-[#000] md:text-[20px] text-[13px] font-medium font-serif text-center  mb-1">
                     Strategic Advisor, <br /> Ex- Microsoft
@@ -243,10 +242,10 @@ const OurTeam = () => {
               <div>
                 <img
                   src={leader5}
-                  className="md:w-[521px] mx-auto mb-[10px]"
+                  className="md:w-[521px] mx-auto "
                   alt="Reena Circle 1.png"
                 />
-                <div className="w-full lg:[493px">
+                <div className="w-full -mt-16 ">
                   <h3 className="text-[#000] md:text-[25px] text-[18px] font-bold font-serif text-center mb-2">
                     Reena Dejgambhir
                   </h3>

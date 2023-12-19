@@ -1,6 +1,3 @@
-/* .bgColor {
-	fill: linear-gradient(1deg, #88B7DA -23.31%, rgba(255, 255, 255, 0.00) 128.24%);
-} */
 
 .swiper {
   width: 100%;
@@ -8,19 +5,14 @@
 }
 
 .swiper-button-prev {
-  /* position: absolute;
-  top: 50% !important;
-  left: 90px !important; */
+  
   color: #3595FC  !important;
   opacity: 0.4 !important;
 
 }
 
 .swiper-button-next {
-  /* position: absolute;
-  top: 50% !important;
-  left: 1135px !important; */
-  /* font-size: 14px !important; */
+  
   color: #3595FC  !important;
   opacity: 0.4 !important;
 

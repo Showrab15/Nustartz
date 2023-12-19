@@ -12,11 +12,10 @@ const Services = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="w-full font-serif  md:h-[350px] h-[400px] lg:h-[534px] 2xl:h-[700px]  mx-auto flex justify-center items-center"
+        className="w-full font-serif  md:h-[350px] h-[400px] lg:h-[534px] 2xl:h-[510px]  mx-auto flex justify-center items-center"
       >
         <h3 className="text-[#275998] text-lg lg:text-[35px] md:leading-[28px] lg:leading-normal font-bold text-center px-2 md:px-0">
-          From strategic guidance to cutting-edge tech solutions,           <br className="hidden md:block xl:block" /> Our dedicated support propels your
-          <br className="hidden md:block xl:block" />
+          From strategic guidance to cutting-edge tech solutions, <br className="hidden md:block xl:block" />
           we empower startups to not just thrive but conquer their industry
         </h3>
       </div>
@@ -149,6 +148,7 @@ const Services = () => {
                 <h6 className="font-normal hover-white text-[#275998] text-[8px] md:text-[14px] mt-[5px] mb-[10px]">  Explore a suite of  solutions including Microsoft Fabric, Microsoft Dynamics CRM, and Data Engineering &Visualization.</h6>
               </div>
             </article>
+            
           </section>
 
 

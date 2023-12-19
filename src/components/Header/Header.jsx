@@ -1,118 +1,44 @@
-import banner1 from "../../assets/Banner/Banner.jpg";
-import banner2 from "../../assets/Banner/Banner2.png";
-import banner3 from "../../assets/Banner/Banner3.png";
-import banner4 from "../../assets/Banner/Banner4.png";
-import { Carousel } from "react-responsive-carousel";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./header.css";
+import BgVideo from '../../assets/bannerViswo.mp4'
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const carouselSettings = {
-    showArrows: false,
-    showStatus: false,
-    infiniteLoop: true,
-    // autoPlay: true,
-    interval: 3000,
-    // showThumbs: true,
-  };
+ 
 
   return (
-    <div className="w-full h-full ">
-      <Carousel {...carouselSettings}>
-        {/* 1st Carousel */}
-        <div
-          style={{
-            backgroundImage: `url(${banner1})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-           
-          }}
-          className="w-full  h-[450px] md:h-[600px]  2xl:h-[550px]  flex justify-end">
-         <div className="font-serif flex flex-col items-center mx-auto my-auto text-white">
-         <h3 className="text-[20px] md:text-[35px] font-semibold md:mt-[200px] mt-[100px]">We help you to</h3>
- <p className="text-[10px] md:text-[20px] font-medium  leading-[10px] md:leading-[28px] mb-6">
-              Elevate your {`team's`} capabilities <br className="md:bl"/> with our proficient
-              software engineers.
-            </p>
-            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[20px] px-10 py-5 text-xl tracking-[0.081em]">
-              Schedule
-            </button></Link>
-         </div>
-            {/* 
-            */}
-          </div>
+    <div className="w-full h-full mb-20">
+    
+        <div className="relative w-full h-[450px] md:h-[600px] 2xl:h-[550px] overflow-hidden">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src={BgVideo}  type="video/mp4" />
+    {/* Add additional <source> tags for other video formats if needed */}
+    Your browser does not support the video tag.
+    <track kind="captions" src="your-captions.vtt"  label="English"/>
+
+  </video>
+  
+  <div className="absolute inset-0 flex justify-end items-center">
+    <div className="font-serif flex flex-col items-center mx-auto my-auto text-white">
+    
+      <Link to="https://calendly.com/nustartz/30min">
+        <button className="btn-hover color-9 rounded-[20px] px-5 py-3 md:mt-[500px] mt-[300px] lg:mt-[450px] text-lg tracking-[0.081em]">
+          Schedule
+        </button>
+      </Link>
+    </div>
+  </div>
+</div>
+
         
-        {/* 2nd Carousel*/}
-        <div
-          style={{
-            backgroundImage: `url(${banner2})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-           
-          }}
-          className="w-full  h-[450px] md:h-[600px]  2xl:h-[550px]  flex justify-end">
-         <div className="font-serif flex flex-col items-center mx-auto my-auto text-white ">
-         <h3 className="text-[20px] md:text-[35px] font-semibold md:mt-[200px] mt-[100px]">Eliminate</h3>
- <p className="text-[10px] md:text-[20px] font-medium  leading-[10px] md:leading-[28px] mb-6">
- the burden of recruiting <br />  and training
-            </p>
-
-          
-<Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[20px] px-10 py-5 text-xl tracking-[0.081em]">
-              Schedule
-            </button></Link>
-
-          
-         </div>
-            {/* 
-            */}
-          </div>
-        {/* 3rd Carousel*/}
-        <div
-          style={{
-            backgroundImage: `url(${banner3})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-           
-          }}
-          className="w-full  h-[450px] md:h-[600px]  2xl:h-[550px]  ">
-         <div className="font-serif flex flex-col items-center mx-auto my-auto text-white">
-         <h3 className="text-[20px] md:text-[35px] font-semibold  md:mt-[250px]  mt-[200px]">Prepare</h3>
- <p className="text-[10px] md:text-[20px] font-medium  leading-[10px] md:leading-[28px] mb-6">
-              Elevate your {`team's`} capabilities <br className="md:block hiiden"/>          for a transformative 
-experience
-
-            </p>
-            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[20px] px-10 py-5 text-xl tracking-[0.081em]">
-              Schedule
-            </button></Link>
-         </div>
-            {/* 
-            */}
-          </div>
-          <div
-          style={{
-            backgroundImage: `url(${banner4})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-           
-          }}
-          className="w-full  h-[450px] md:h-[600px]  2xl:h-[550px]  ">
-         <div className="font-serif flex flex-col items-center mx-auto my-auto text-white">
-         <h3 className="text-[20px] md:text-[35px] font-semibold  md:mt-[250px] mt-[200px]">Retain</h3>
- <p className="text-[10px] md:text-[20px] font-medium  leading-[10px] md:leading-[28px] mb-6">
-              Elevate your {`team's`} capabilities <br/>              Absolute authority over your <br /> team whenever you desire
-
-            </p>
-            <Link to="https://calendly.com/nustartz/30min">  <button className="bg-[#275998] rounded-[20px] px-10 py-5 text-xl tracking-[0.081em]">
-              Schedule
-            </button></Link>
-         </div>
-            {/* 
-            */}
-          </div>
-      </Carousel>
+      
     </div>
   );
 };
