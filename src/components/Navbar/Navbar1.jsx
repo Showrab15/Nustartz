@@ -1,6 +1,6 @@
 import logo from "../../assets/Nustartz.png";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
+import {  useState } from "react";
 import "./Navbar.css"
 const Navbar1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,32 +12,33 @@ const Navbar1 = () => {
   const closeMenu = () => {
     setMenuOpen(false);
   };
-
+ 
   return (
-    <div className="mb-1 z-50 w-full bg-white shadow-xl rounded-2xl font-serif">
+    <div className="mb-1 z-50 w-full bg-white  shadow-xl rounded-2xl font-serif">
 
       <div className="flex flex-row justify-between px-4 lg:px-12 py-5 relative w-full max-w-[1322px] mx-auto">
         <Link to="/">
           <img src={logo} className="w-28 h-10 lg:w-[201px] lg:h-[55px]" alt="" />
         </Link>
-        <ul className="font-serif   hidden md:flex items-center justify-center space-x-9 text-lg text-[#3595FC] font-medium  ">
+        <nav>
+        <ul className="font-serif   hidden md:flex items-center justify-center space-x-9 text-lg text-[#3595FC] font-medium relative ">
           <li>
-            <NavLink className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? " font-semibold" : ""
-            } to="/home" aria-label="Home" title="Home"
-
-            >
-              Home
-            </NavLink>
+          <NavLink
+            to="/home"
+            aria-label="Home"
+            title="Home"
+            className="font-semibold navLink"
+            
+          >
+            Home
+          </NavLink>
           </li>
           <li>
             <NavLink
               to="/offerings"
               aria-label="offerings"
               title="offerings"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? " font-semibold" : ""
-              }
+              className="font-semibold navLink "
             >
               Offerings
             </NavLink>
@@ -46,13 +47,14 @@ const Navbar1 = () => {
             <NavLink to="about-Us"
               aria-label="about"
               title="about"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? " font-semibold" : ""
-              }>
+              className="font-semibold navLink"
+              >
               About Us
             </NavLink>
           </li>
         </ul>
+        
+</nav>
         <Link to="/contact-us">
           <button className="btn-hover color-9 hidden border-none p-4 rounded-xl md:block  text-white text-base">
             Contact →{" "}

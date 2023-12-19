@@ -208,7 +208,7 @@ const OurTeam = () => {
                 className="md:w-[521px] mx-auto mb-[10px]"
                 alt="Arun circle 1.png"
               />
-              <div className="w-full lg:[493px">
+              <div className="w-full ">
                 <h3 className="text-[#000] md:text-[25px] text-[18px] font-bold font-serif text-center mb-2">
                   Arun Balakrishnan
                 </h3>
@@ -218,7 +218,7 @@ const OurTeam = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-">
               {/* 4th Leader */}
               <div>
                 <img
@@ -226,7 +226,7 @@ const OurTeam = () => {
                   className="md:w-[521px] mx-auto mb-[10px]"
                   alt="mohan  circle.png"
                 />
-                <div className="w-full lg:[493px">
+                <div className="w-full ">
                   <h3 className="text-[#000] md:text-[25px] text-[18px] font-bold font-serif text-center mb-2">
                     Mohan Kumar
                   </h3>
@@ -239,7 +239,7 @@ const OurTeam = () => {
                 </div>
               </div>
               {/* 5th Leader */}
-              <div>
+              <div className="md:-mt-4">
                 <img
                   src={leader5}
                   className="md:w-[521px] mx-auto "
