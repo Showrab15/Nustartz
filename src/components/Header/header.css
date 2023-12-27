@@ -19,7 +19,6 @@ button.rec-dot{
   text-align:center;
   border: none;
   background-size: 300% 100%;
-
   border-radius: 50px;
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;

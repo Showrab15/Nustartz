@@ -16,14 +16,14 @@ import wave from '../../assets/Hero Slider.png'
 
 const OurTeam = () => {
   return (
-    <div className="font-serif pt-12">
+    <>
       <div
         style={{
           backgroundImage: `url(${banner})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="w-full 2xl:h-[500px] lg:h-[534px]  h-[400px] md:h-[350px] mx-auto flex justify-center items-center"
+        className="w-full 2xl:h-[510px] lg:h-[534px]  h-[400px] md:h-[350px] mx-auto flex justify-center items-center font-serif "
       >
         <h3 className="text-[#275998] text-lg lg:text-[35px] md:leading-[28px] lg:leading-normal font-bold text-center px-2 md:px-0">
           Empowering startups with innovation and expertise{" "}
@@ -262,7 +262,7 @@ const OurTeam = () => {
       </div>
 
 
-    </div>
+    </>
   );
 };
 

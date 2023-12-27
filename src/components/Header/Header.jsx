@@ -31,7 +31,7 @@ const Header = () => {
     <div className="font-serif flex flex-col items-center mx-auto my-auto text-white">
     
       <Link to="https://calendly.com/nustartz/30min">
-        <button className="btn-hover color-9 rounded-[20px] px-5 py-3 sm:mt-[500px]  mt-[120px] lg:mt-[450px] text-lg tracking-[0.081em]">
+        <button className="btn-hover color-9 rounded-[20px] px-4 sm:px-5 py-3 sm:mt-[500px]  mt-[120px] lg:mt-[450px] sm:text-lg text-sm  tracking-[0.081em]">
           Schedule
         </button>
       </Link>

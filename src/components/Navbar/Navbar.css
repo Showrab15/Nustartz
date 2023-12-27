@@ -8,7 +8,7 @@
   nav ul li{
     list-style: none;
     display: inline-block;
-    padding: 15px 35px;
+    padding: 8px 15px;
     cursor: pointer;
     position: relative;
     z-index: 2;
@@ -20,8 +20,8 @@
     content: '';
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    border-radius: 3px;
+    background:  #3f86ed;
+    border-radius: 20px;
     top: 100%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -31,11 +31,40 @@
   }
   
   nav ul li:hover::after{
-    opacity: 1;
+    opacity: .5;
     top:50%;
   }
   nav ul li:hover .navLink{
     color:white;
   }
 
-  
+  /* CSS */
+/* Add animation for the active NavLink */
+.font-semibold.active::after {
+  content: '';
+  display: block;
+  width: 4px; /* Width of the dot */
+  height: 4px; /* Height of the dot */
+  background-color: #3595FC; /* Color of the dot */
+  border-radius: 50%; /* To make it round */
+  position: absolute;
+  bottom: -6px; /* Adjust the position of the dots */
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulse 1s infinite; /* Add your animation here */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}

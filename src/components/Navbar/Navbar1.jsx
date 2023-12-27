@@ -13,6 +13,12 @@ const Navbar1 = () => {
     setMenuOpen(false);
   };
  
+  const [activeLink, setActiveLink] = useState('');
+
+  // Function to handle NavLink activation
+  const handleNavLinkClick = (link) => {
+    setActiveLink(link);
+  };
   return (
     <div className="mb-1 z-50 w-full bg-white  shadow-xl rounded-2xl font-serif">
 
@@ -27,8 +33,8 @@ const Navbar1 = () => {
             to="/home"
             aria-label="Home"
             title="Home"
-            className="font-semibold navLink"
-            
+            className={activeLink === '/home' ? 'font-semibold active' : 'font-semibold navLink'}
+          onClick={() => handleNavLinkClick('/home')}
           >
             Home
           </NavLink>
@@ -38,17 +44,17 @@ const Navbar1 = () => {
               to="/offerings"
               aria-label="offerings"
               title="offerings"
-              className="font-semibold navLink "
-            >
+              className={activeLink === '/offerings' ? 'font-semibold active' : 'font-semibold navLink'}
+          onClick={() => handleNavLinkClick('/offerings')}           >
               Offerings
             </NavLink>
           </li>
           <li>
-            <NavLink to="about-Us"
+            <NavLink to="/about-Us"
               aria-label="about"
               title="about"
-              className="font-semibold navLink"
-              >
+              className={activeLink === '/about-Us' ? 'font-semibold active' : 'font-semibold navLink'}
+          onClick={() => handleNavLinkClick('/about-Us')}             >
               About Us
             </NavLink>
           </li>
