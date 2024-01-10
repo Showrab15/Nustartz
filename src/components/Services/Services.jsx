@@ -32,7 +32,20 @@ const Services = () => {
 
           <section className="cards  px-20 lg:px-10 xl:px-0 mx-auto gap-12 md:gap-16 lg:gap-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-            {/* sixth box */}
+{/* sixth box */}
+<article className="cart w-full  cursor-pointer  card--10 ">
+              <div className="card__img card__img--10"></div>
+              <div className="card__img--hover card__img--hover-10"></div>
+              <div className="card__info">
+                <h2 className="text-[#275998] hover-white uppercase text-[10px] md:text-[18px] font-semibold">Resource Ownership:
+                </h2>
+                <h6 className="font-normal hover-white text-[#275998] text-[8px] md:text-[14px] mt-[5px] mb-[10px]">You have the flexibility to showcase these resources as your own,
+                  whether highlighting talent, your bench, or investments, wherever
+                  it suits your preferences.</h6>
+              </div>
+            </article>
+
+            {/* seventh box */}
             <article className="cart w-full  cursor-pointer  card--6">
               <div className="card__img card__img--6"></div>
               <div className="card__img--hover card__img--hover-6"></div>
@@ -43,7 +56,7 @@ const Services = () => {
               </div>
             </article>
 
-            {/* seventh box */}
+            {/* eight box */}
             <article className="cart w-full  cursor-pointer  card--7">
               <div className="card__img card__img--7"></div>
               <div className="card__img--hover card__img--hover-7"></div>
@@ -55,7 +68,7 @@ const Services = () => {
               </div>
             </article>
 
-            {/* eight box */}
+            {/* ninth box */}
             <article className="cart w-full  cursor-pointer  card--8">
               <div className="card__img card__img--8"></div>
               <div className="card__img--hover card__img--hover-8"></div>
@@ -67,7 +80,7 @@ const Services = () => {
               </div>
             </article>
 
-            {/* ninth box */}
+            {/* tenth box */}
             <article className="cart w-full  cursor-pointer  card--9 ">
               <div className="card__img card__img--9"></div>
               <div className="card__img--hover card__img--hover-9"></div>
@@ -80,7 +93,7 @@ const Services = () => {
               </div>
             </article>
 
-            {/* ten box */}
+            {/* eleventh box */}
             <article className="cart w-full  cursor-pointer  card--10 ">
               <div className="card__img card__img--10"></div>
               <div className="card__img--hover card__img--hover-10"></div>
@@ -91,19 +104,7 @@ const Services = () => {
                   product.</h6>
               </div>
             </article>
-            {/* ten box */}
-            <article className="cart w-full  cursor-pointer  card--10 ">
-              <div className="card__img card__img--10"></div>
-              <div className="card__img--hover card__img--hover-10"></div>
-              <div className="card__info">
-                <h2 className="text-[#275998] hover-white uppercase text-[10px] md:text-[18px] font-semibold">Resource Ownership:
-                </h2>
-                <h6 className="font-normal hover-white text-[#275998] text-[8px] md:text-[14px] mt-[5px] mb-[10px]">You have the flexibility to showcase these resources as your own,
-                  whether highlighting talent, your bench, or investments, wherever
-                  it suits your preferences.</h6>
-              </div>
-            </article>
-
+           
           </section>
 
 

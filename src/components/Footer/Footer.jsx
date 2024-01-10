@@ -71,7 +71,7 @@ const Footer = () => {
                     {/* bottom */}
                     <div className='mt- py-5 border-y-0 text-center'>
                         <hr className='mb-2 border-blue-200' />
-                        <p className=''>&copy; Copyright 2023 <span className='text-blue-500'>Nustartsz </span> - All rights reserved</p>
+                        <p className=''>&copy; Copyright 2024 <span className='text-blue-500'>Nustartsz </span> - All rights reserved</p>
                     </div>
                 </div>
                 <div></div>

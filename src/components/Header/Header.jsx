@@ -1,8 +1,8 @@
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./header.css";
-import BgVideo from '../../assets/bannerViswo.mp4'
-import BgVideo1 from '../../assets/Sequence 01.mp4'
+import BgVideoMobile from '../../assets/WebsiteBannerMobile.mp4'
+import BgVideoPC from '../../assets/websiteBannerPC.mp4'
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -19,8 +19,8 @@ const Header = () => {
     playsInline
     className="absolute inset-0 w-full h-full object-cover "
   >
-    <source className="hidden sm:block" src={BgVideo}  type="video/mp4" />
-    <source className="block sm:hidden " src={BgVideo1}  type="video/mp4" />
+    <source className="hidden sm:block" src={BgVideoMobile}  type="video/mp4" />
+    <source className="block sm:hidden " src={BgVideoPC}  type="video/mp4" />
     {/* Add additional <source> tags for other video formats if needed */}
     Your browser does not support the video tag.
     <track kind="captions" src="your-captions.vtt"  label="English"/>

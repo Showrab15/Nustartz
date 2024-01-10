@@ -101,7 +101,7 @@ const OurTeam = () => {
                   Steve Bakther
                 </h3>
                 <h4 className="text-[12px] md:text-[20px] font-medium ">
-                  Chief Operating Officer
+                Coo / Co-founder
                 </h4>
               </div>
 

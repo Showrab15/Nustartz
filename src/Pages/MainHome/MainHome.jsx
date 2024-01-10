@@ -13,12 +13,14 @@ function MainHome() {
   }
   return (
     < >
-      <Helmet>
+        <Helmet>
         <title>NuStartz - Crafting The Future Of Startups</title>
         <meta property="og:title" content="Crafting the Future of Startups" />
         <meta property="og:description" content="Explore boundless innovation and transformative solutions at NuStartz. Discover our vision, services, and commitment to shaping the future of startups and entrepreneurs" />
-        <meta property="og:image" content="../public/logo.svg" />
-        <meta property="og:url" content="https://www.nustartz.com/" />
+        <meta property="og:image" content="https://i.ibb.co/HxPZxdH/Nustartz.png"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image" content="url_image"/>
+  <meta property="og:url" content="https://www.nustartz.com/" />
       </Helmet>
       <div className="max-w-6xl mx-auto">
 

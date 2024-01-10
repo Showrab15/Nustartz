@@ -7,6 +7,7 @@ import clientLogo4 from "../../assets/Clients Logo/mamneta.png";
 import clientLogo5 from "../../assets/Clients Logo/mavio.png";
 import clientLogo6 from "../../assets/Clients Logo/yotta.png";
 import clientLogo7 from "../../assets/Clients Logo/mynainsights_logo 1.png";
+import clientLogo8 from "../../assets/Clients Logo/CarrerJourney.png";
 import wave from '../../assets/Hero Slider.png'
 import Marquee from "react-fast-marquee";
 
@@ -40,6 +41,7 @@ const OurClients = () => {
             <img style={{ marginRight: '20px' }} className="mx-auto  cursor-pointer" src={clientLogo4} alt="mamneta" />
             <img style={{ marginRight: '20px' }} className="mx-auto  cursor-pointer" src={clientLogo5} alt="mavio" />
             <img style={{ marginRight: '20px' }} className="mx-auto  cursor-pointer" src={clientLogo6} alt="yotta" />
+            <img style={{ marginRight: '20px' }} className="mx-auto w-80 h-32 cursor-pointer" src={clientLogo8} alt="careerJourney" />
           </Marquee>
         </div>
       </div>

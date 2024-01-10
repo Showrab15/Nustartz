@@ -24,7 +24,7 @@ const Navbar1 = () => {
 
       <div className="flex flex-row justify-between px-4 lg:px-12 py-5 relative w-full max-w-[1322px] mx-auto">
         <Link to="/">
-          <img src={logo} className="w-28 h-10 lg:w-[201px] lg:h-[55px]" alt="" />
+          <img src={logo} className="w-48 h-10 lg:w-[251px] lg:h-[45px]" alt="" />
         </Link>
         <nav>
         <ul className="font-serif   hidden md:flex items-center justify-center space-x-9 text-lg text-[#3595FC] font-medium relative ">
