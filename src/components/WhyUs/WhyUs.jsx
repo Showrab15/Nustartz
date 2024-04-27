@@ -16,7 +16,7 @@ const WhyUs = () => {
           <img
             src={q}
             className="absolute left-[66px] md:left-[130px] lg:left-[180px] -top-[35px] md:-top-[75px] lg:-top-20"
-            alt=""
+            alt="q"
           />
         </div>
         <div className=" mx-auto mt-8 md:mt-11 lg:mt-4">
@@ -26,7 +26,7 @@ const WhyUs = () => {
                 <img
                   className="w-[80px] h-[74px] flex mx-auto"
                   src={chart}
-                  alt=""
+                  alt="chart"
                 />
                 <p className="py-9 text-[14px] font-medium font-serif">
                   As you grow, <br />
@@ -43,7 +43,7 @@ const WhyUs = () => {
                 <img
                   className="w-[99px] h-[102px] flex mx-auto"
                   src={light}
-                  alt=""
+                  alt="light"
                 />
                 <p className="mt-5  text-[14px] font-medium font-serif">
                   We thrive on innovation,
@@ -62,7 +62,7 @@ const WhyUs = () => {
                 <img
                   className="w-[94px] h-[88px] flex mx-auto right-[70px] "
                   src={note}
-                  alt=""
+                  alt="note"
                 />
                 <p className="py-6 text-[14px] font-medium font-serif">
                   Your success is our priority, <br /> and we measure it by your

@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className=" mx-auto pt-2">
                     <div className='grid mx-auto ml-[40px] mdLml-0 grid-cols-2 gap-[65px] md:grid-cols-4 md:gap-2 mt-4 '>
                         <div className="md:ml-8 text-sm">
-                            <img className="md:w-40 w-32 md:-ml-4 -ml-[15px] mb-5" src='https://i.ibb.co/1XYk81B/Steve-logo-copy-2-1.png' alt="" />
+                            <img className="md:w-40 w-32 md:-ml-4 -ml-[15px] mb-5" src='https://i.ibb.co/1XYk81B/Steve-logo-copy-2-1.png' alt="logo" />
                             <p className='mb-1 '>Website : www.nustartz.com</p>
                             <p className='mb-1 '>Email : <span className="text-[14px]">contact@NuStartz.com</span> </p>
                             <p className=''>Mobile : +1 732 983 1325</p>

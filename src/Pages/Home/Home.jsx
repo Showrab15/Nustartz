@@ -17,9 +17,9 @@ function Home() {
         <title>Home || Welcome to NuStartz - Where Innovation Begins</title>
         <meta property="og:title" content="Welcome to NuStartz - Where Innovation Begins" />
         <meta property="og:description" content="Experience a world of innovation and possibilities with NuStartz. Explore our diverse offerings, discover our story, and embark on a journey towards transformative solutions" />
-        <meta property="og:image" content="../../../public/logo.svg" />
+        <meta property="og:image" content="https://i.ibb.co/9G3pxvq/Seo-image.jpg" />
         <meta property="og:url" content="https://www.nustartz.com/home" />
-        <link rel="canonical " href="/home" />
+        <link rel="canonical " href="https://www.nustartz.com/home" />
 
       </Helmet>
       <div className="max-w-6xl mx-auto">

@@ -53,22 +53,18 @@ const Achievement = () => {
           </p>
         </div>
         <div className="w-full md:w-[360px] text-center">
-          <CountUp start={0} end={99} delay={0} enableScrollSpy>
-            {({ countUpRef }) => (
-              <div className="flex font-bold text-[26px] text-[#050038] text-center font-inter mb-9 justify-center">
-                <h1
-                  ref={countUpRef}
-                >
-                  99
-                </h1>
-                <span>%</span>
-              </div>
-            )}
-          </CountUp>
-          <p className="text-[#050038] text-center text-[15px] font-serif leading-6">
-            of the Fortune 100 are customers
-          </p>
-        </div>
+            <CountUp start={0} end={99} delay={0} enableScrollSpy>
+              {({ countUpRef }) => (
+                <div className="flex font-bold text-[26px] text-[#050038] text-center font-inter mb-9 justify-center">
+                  <h1 ref={countUpRef}>99</h1>
+                  <span>%</span>
+                </div>
+              )}
+            </CountUp>
+            <p className="text-[#050038] text-center text-[15px] font-serif leading-6">
+              of the Fortune 100 are customers
+            </p>
+          </div>
         <div className="w-full md:w-[360px] text-center">
           <CountUp start={0} end={1000} delay={0} enableScrollSpy>
             {({ countUpRef }) => (
@@ -122,7 +118,6 @@ const Achievement = () => {
         </div>
       </div>
     </div>
-    {/* <img className="mt-4 w-full" src={wave} alt="" /> */}
 
     </div>
    

@@ -42,7 +42,7 @@ const Testimonial = () => {
                 <img
                   src={person1}
                   className="w-[470px] h-[170px] mx-auto"
-                  alt=""
+                  alt="person"
                 />
                 <h5 className="text-center text-[#333] text-sm leading-5 lg:text-xl font-semibold lg:leading-9  font-serif">
                   CareerJourney
@@ -61,11 +61,11 @@ const Testimonial = () => {
                 </h5>
 
                 <div className="flex justify-center gap-2">
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
                 </div>
               </div>
             </SwiperSlide>
@@ -76,7 +76,7 @@ const Testimonial = () => {
                 <img
                   src={person2}
                   className="w-[170px] h-[170px] mx-auto"
-                  alt=""
+                  alt="person2"
                 />
                 <h5 className="text-center text-[#333] text-sm leading-5 lg:text-xl font-semibold lg:leading-9  font-serif">
                   Myna Insights
@@ -94,11 +94,11 @@ const Testimonial = () => {
                   </span>
                 </h5>
                 <div className="flex justify-center gap-2">
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
                 </div>
               </div>
             </SwiperSlide>
@@ -109,7 +109,7 @@ const Testimonial = () => {
                 <img
                   src={person3}
                   className=" mx-auto mt-12"
-                  alt=""
+                  alt="person3"
                 />
                 <h5 className="text-center mt-8 text-[#333] text-sm leading-5 lg:text-xl font-semibold lg:leading-9  font-serif">
                   Yottaasys
@@ -127,11 +127,11 @@ const Testimonial = () => {
                   </span>
                 </h5>
                 <div className="flex justify-center gap-2 -mb-8">
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
                 </div>
               </div>
             </SwiperSlide>
@@ -142,7 +142,7 @@ const Testimonial = () => {
                 <img
                   src={person4}
                   className="mt-12 mx-auto"
-                  alt=""
+                  alt="person4"
                 />
                 <h5 className="text-center mt-8 text-[#333] text-sm leading-5 lg:text-xl font-semibold lg:leading-9  font-serif">
                   IntentX
@@ -157,49 +157,19 @@ const Testimonial = () => {
                   </span>
                 </h5>
                 <div className="flex justify-center gap-2">
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
                 </div>
               </div>
             </SwiperSlide>
 
-            {/* // fifth */}
-            {/* <SwiperSlide>
-              <div className="w-full h-[470px] px-6 py-6">
-                <img
-                  src={person5}
-                  className="w-[170px] h-[170px] mx-auto"
-                  alt=""
-                />
-                <h5 className="text-center text-[#333] text-lg leading-5 lg:text-2xl font-bold lg:leading-9  font-serif">
-                Myna Insights
-                </h5>
-                <p className="text-center  text-[10px] md:text-[15px]     text-[#999] font-serif mt-8 w-full lg:w-[800px] mx-auto">
-                  “NuStartz played a crucial role in enhancing our healthcare{" "}
-                  {`practice's`} online presence. Their strategies helped us
-                  connect with patients. {`I'm`} grateful for the impact
-                  NuStartz has made.”
-                </p>
-                <h5 className="text-center text-[#333] text-lg leading-5  lg:leading-9 lg:text-2xl font-bold my-6 font-serif">
-                  Greg Stuart
-                </h5>
-                <div className="flex justify-center gap-2">
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                </div>
-              </div>
-            </SwiperSlide> */}
-
+       
           </Swiper>
         </div>
       </div>
-      {/* <img className="-mt-5 w-full" src={wave} alt="" /> */}
     </div>
   );
 };

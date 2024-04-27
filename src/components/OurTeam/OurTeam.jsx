@@ -31,7 +31,7 @@ const OurTeam = () => {
           journey from concept to triumph
         </h3>
       </div>
-      <img className="-mt-2 w-full md:block hidden" src={wave} alt="" />
+      <img className="-mt-2 w-full md:block hidden" src={wave} alt="wave" />
 
       <div className="  mx-auto team-bg-cover py-4  mt-2">
 
@@ -55,7 +55,7 @@ const OurTeam = () => {
                 <img
                   className="lg:w-[402px] lg:h-[504.4px] mx-auto ml-6 -mt-[215px] md:-mt-[290px] lg:-mt-[250px]"
                   src={Siva}
-                  alt=""
+                  alt="siva"
                 />
               </div>
 
@@ -72,7 +72,7 @@ const OurTeam = () => {
                 <img
                   className="justify-start h-6 w-6 lg:w-8 lg:h-8 "
                   src={leftQuote}
-                  alt=""
+                  alt="quote"
                 />
                 <p className="font-medium text-center p-2 text-[9px] md:text-[15px] pb-8">
                   I believe in the power of innovation and the limitless potential
@@ -82,7 +82,7 @@ const OurTeam = () => {
                   entrepreneurs as they <br className="lg:block hidden" /> chart
                   their course toward success.
                 </p>
-                <img className="h-6 w-6 lg:w-8 lg:h-8" src={quote} alt="" />
+                <img className="h-6 w-6 lg:w-8 lg:h-8" src={quote} alt="quote" />
               </div>
             </div>
 
@@ -92,7 +92,7 @@ const OurTeam = () => {
                 <img
                   className="-ml-3 lg:ml-0 lg:w-[402px] lg:h-[504.4px] mx-auto -mt-[215px] md:-mt-[290px] lg:-mt-[250px]"
                   src={Steve}
-                  alt=""
+                  alt="steve"
                 />
               </div>
 
@@ -109,7 +109,7 @@ const OurTeam = () => {
                 <img
                   className="justify-start h-6 w-6 lg:w-8 lg:h-8 "
                   src={leftQuote}
-                  alt=""
+                  alt="quote"
                 />
                 <p className="font-medium text-center p-2 text-[9px] md:text-[15px] pb-8">
                   Elevating success in startup tech with unwavering support—where{" "}
@@ -119,7 +119,7 @@ const OurTeam = () => {
                   script the <br className="lg:block hidden" /> success stories of
                   tomorrow.
                 </p>
-                <img className="h-6 w-6 lg:w-8 lg:h-8" src={quote} alt="" />
+                <img className="h-6 w-6 lg:w-8 lg:h-8" src={quote} alt="quote" />
               </div>
             </div>
 
@@ -129,7 +129,7 @@ const OurTeam = () => {
                 <img
                   className="lg:w-[382px] lg:h-[450.4px] mx-auto -mt-[215px] md:-mt-[290px] lg:-mt-[220px]"
                   src={Dinesh}
-                  alt=""
+                  alt="dinesh"
                 />
               </div>
 
@@ -146,7 +146,7 @@ const OurTeam = () => {
                 <img
                   className="justify-start h-6 w-6 lg:w-8 lg:h-8 "
                   src={leftQuote}
-                  alt=""
+                  alt="quote"
                 />
                 <p className="font-medium text-center p-2 text-[9px] md:text-[15px] pb-8">
                   My passion lies in harnessing technology to

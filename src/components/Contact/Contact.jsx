@@ -8,12 +8,9 @@ import {
   FaPhoneAlt,
   FaRegEnvelope,
   FaFacebookF,
-  FaInstagram,
-  FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
 import Map from "../Map/Map";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
   const mapRef = useRef();
@@ -126,20 +123,14 @@ const Contact = () => {
             </p>
             <p className="flex gap-4 items-center  ">
               <FaFacebookF />
-              <Link to="https://www.facebook.com/profile.php?id=61554431259746">NuStartz</Link>
+              <a href="https://www.facebook.com/profile.php?id=61554431259746" aria-label="Read more about NuStartz on Facebook" >NuStartz</a>
             </p>
-            {/* <p className="flex gap-4 items-center  ">
-              <FaInstagram />
-            </p>
-            <p className="flex gap-4 items-center  ">
-              <FaLinkedin />
-            </p> */}
+          
             <p className="flex gap-4 items-center  ">
               <FaYoutube />
-              <Link to="https://www.youtube.com/@NuStartz">NuStartz</Link>
+              <a href="https://www.youtube.com/@NuStartz" aria-label="Read more about NuStartz on Youtube">NuStartz</a>
             </p>
           </div>
-          {/* <SocialIcon /> */}
           <div
             style={{
               backgroundImage: `url(${bg1})`,

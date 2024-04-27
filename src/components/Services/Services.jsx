@@ -19,7 +19,7 @@ const Services = () => {
           we empower startups to not just thrive but conquer their industry
         </h3>
       </div>
-      <img className="-mt-2 w-full md:block hidden" src={wave} alt="" />
+      <img className="-mt-2 w-full md:block hidden" src={wave} alt="wave" />
 
       <div className='font-serif max-w-6xl mx-auto '>
 
