@@ -19,6 +19,7 @@ const AboutUs = () => {
         <meta property="og:description" content="Learn who we are, what drives us, and our journey. Explore the heart behind NuStartz as we share our passion for innovation and growth" />
         <meta property="og:image" content="../../../src/assets/AboutUsBanner.png" />
         <meta property="og:url" content="https://www.nustartz.com/about-Us" />
+        <link rel="canonical " href="/about-Us" />
       </Helmet>
                  <OurTeam/> 
            

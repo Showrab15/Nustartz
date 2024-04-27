@@ -148,10 +148,7 @@ const Testimonial = () => {
                   IntentX
                 </h5>
                 <p className="text-center  text-[10px] md:text-[15px]     text-[#999] font-serif mt-6 w-full lg:w-[800px] mx-auto">
-                  “NuStartz has been a game-changer for my business.<br /> Their
-                  digital marketing expertise is top-notch, and {`they've`}{" "}
-                  significantly <br /> improved  my online presence. {`I'm`} thrilled
-                  with the results honestly.”
+                  “NuStartz has been vital in guiding us through product development and backend operations.<br className="hidden sm:block" />  Their invaluable extended team support allows us to focus on our core objectives while they seamlessly handle backend operations.<br className="hidden sm:block" />  We highly recommend NuStartz to startups seeking accelerated growth  and success.”
                 </p>
                 <h5 className="text-center text-[#333] text-sm leading-5 lg:text-xl font-bold lg:leading-9 my-5 font-serif flex flex-col items-center">
                   Vamsi Putrevu

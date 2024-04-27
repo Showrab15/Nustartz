@@ -21,6 +21,8 @@ function MainHome() {
 <meta property="og:image:type" content="image/png"/>
 <meta property="og:image" content="url_image"/>
   <meta property="og:url" content="https://www.nustartz.com/" />
+  <link rel="canonical " href="/" />
+
       </Helmet>
       <div className="max-w-6xl mx-auto">
 
