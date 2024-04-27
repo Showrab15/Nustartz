@@ -14,7 +14,7 @@ const Footer = () => {
                             <img className="md:w-40 w-32 md:-ml-4 -ml-[15px] mb-5" src='https://i.ibb.co/1XYk81B/Steve-logo-copy-2-1.png' alt="logo" />
                             <p className='mb-1 '>Website : www.nustartz.com</p>
                             <p className='mb-1 '>Email : <span className="text-[14px]">contact@NuStartz.com</span> </p>
-                            <p className=''>Mobile : +1 732 983 1325</p>
+                            <p className=''>Mobile : 1 732 983 1325</p>
 
                             {/* social icon */}
                             <SocialFooterIcons></SocialFooterIcons>
